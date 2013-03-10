@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//9lg\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 3214
+      },
+      "writtenOn": "2013-03-10T21:50:24Z",
+      "side": 1,
+      "message": "Ezt bátorkodtam átírni.",
+      "revId": "9dd429dfa4478e6785fb1f465c066cacff9eae70",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9lY\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 3214
+      },
+      "writtenOn": "2013-03-10T21:50:24Z",
+      "side": 1,
+      "message": "Ez kimaradt. Majd javítom.",
+      "revId": "9dd429dfa4478e6785fb1f465c066cacff9eae70",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
