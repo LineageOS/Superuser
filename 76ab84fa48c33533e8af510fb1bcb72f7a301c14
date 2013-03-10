@@ -1,0 +1,344 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//9pU\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-03-10T20:37:03Z",
+      "side": 1,
+      "message": "Rendszergazdai jog kérése...",
+      "revId": "76ab84fa48c33533e8af510fb1bcb72f7a301c14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9pQ\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-03-10T20:37:03Z",
+      "side": 1,
+      "message": "Rendszergazdai jog kérése",
+      "revId": "76ab84fa48c33533e8af510fb1bcb72f7a301c14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9pI\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-03-10T20:37:03Z",
+      "side": 1,
+      "message": "rendszergazdai jogosultság -\u003e jog\n\nnevezzük mindenhol \"Rendszergazdai jog\"-nak",
+      "revId": "76ab84fa48c33533e8af510fb1bcb72f7a301c14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9pE\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-03-10T20:37:03Z",
+      "side": 1,
+      "message": "Rendszergazdai kérelmek %s másodperc után el lesznek utas\nítva -\u003e\nA rendszergazdai jog kérések %s másodperc után el lesznek utasítva",
+      "revId": "76ab84fa48c33533e8af510fb1bcb72f7a301c14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9pA\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-03-10T20:37:03Z",
+      "side": 1,
+      "message": "A két megadott PIN nem egyezik, próbálja újra",
+      "revId": "76ab84fa48c33533e8af510fb1bcb72f7a301c14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9o8\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-03-10T20:37:03Z",
+      "side": 1,
+      "message": "%s rendszergazdai jogot kapott",
+      "revId": "76ab84fa48c33533e8af510fb1bcb72f7a301c14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9o4\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-03-10T20:37:03Z",
+      "side": 1,
+      "message": "%s rendszergazdai jog kérése megtagadva",
+      "revId": "76ab84fa48c33533e8af510fb1bcb72f7a301c14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9o0\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-03-10T20:37:03Z",
+      "side": 1,
+      "message": "jogok",
+      "revId": "76ab84fa48c33533e8af510fb1bcb72f7a301c14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9ow\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-03-10T20:37:03Z",
+      "side": 1,
+      "message": "Csak azon kérések engedélyezése...",
+      "revId": "76ab84fa48c33533e8af510fb1bcb72f7a301c14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9os\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-03-10T20:37:03Z",
+      "side": 1,
+      "message": "kérések",
+      "revId": "76ab84fa48c33533e8af510fb1bcb72f7a301c14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9oo\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-03-10T20:37:03Z",
+      "side": 1,
+      "message": "kérések",
+      "revId": "76ab84fa48c33533e8af510fb1bcb72f7a301c14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9ok\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-03-10T20:37:03Z",
+      "side": 1,
+      "message": "kéréskor",
+      "revId": "76ab84fa48c33533e8af510fb1bcb72f7a301c14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9og\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-03-10T20:37:03Z",
+      "side": 1,
+      "message": "Többfelhasználós szabály",
+      "revId": "76ab84fa48c33533e8af510fb1bcb72f7a301c14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9oc\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-03-10T20:37:03Z",
+      "side": 1,
+      "message": "kérhet",
+      "revId": "76ab84fa48c33533e8af510fb1bcb72f7a301c14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9oY\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-03-10T20:37:03Z",
+      "side": 1,
+      "message": "kérhet",
+      "revId": "76ab84fa48c33533e8af510fb1bcb72f7a301c14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9oQ\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-03-10T20:37:03Z",
+      "side": 1,
+      "message": "Több felhasználót is érint? szabályt csak az eszköz tulajdonosa állíthat be.",
+      "revId": "76ab84fa48c33533e8af510fb1bcb72f7a301c14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9oM\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-03-10T20:37:03Z",
+      "side": 1,
+      "message": "a kérés jóváhagyásához...",
+      "revId": "76ab84fa48c33533e8af510fb1bcb72f7a301c14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9oI\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-03-10T20:37:03Z",
+      "side": 1,
+      "message": "HTC készülékeknél Recovery módú telepítés ajánlott.",
+      "revId": "76ab84fa48c33533e8af510fb1bcb72f7a301c14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9oE\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-03-10T20:37:03Z",
+      "side": 1,
+      "message": "A Superuser telepítése sikeres volt.",
+      "revId": "76ab84fa48c33533e8af510fb1bcb72f7a301c14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9oA\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-03-10T20:37:03Z",
+      "side": 1,
+      "message": "Rendszergazdai jog",
+      "revId": "76ab84fa48c33533e8af510fb1bcb72f7a301c14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
