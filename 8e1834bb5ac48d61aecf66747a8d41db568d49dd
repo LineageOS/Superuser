@@ -50,6 +50,24 @@
       "revId": "8e1834bb5ac48d61aecf66747a8d41db568d49dd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9bA\u003d",
+        "filename": "Superuser/res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-03-11T04:58:28Z",
+      "side": 1,
+      "message": "OK dak !",
+      "parentUuid": "AAAAeX//9bM\u003d",
+      "revId": "8e1834bb5ac48d61aecf66747a8d41db568d49dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
