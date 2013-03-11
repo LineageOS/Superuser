@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "AAAAeX//9bI\u003d",
+        "filename": "Superuser/res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-11T04:56:36Z",
+      "side": 1,
+      "message": "Ici pareil \"automatique\" sans majuscule",
+      "revId": "8e1834bb5ac48d61aecf66747a8d41db568d49dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//9bY\u003d",
         "filename": "Superuser/res/values-fr/strings.xml",
         "patchSetId": 2
@@ -13,6 +30,23 @@
       "writtenOn": "2013-03-11T04:52:55Z",
       "side": 1,
       "message": "commandes est avec une majuscule ? C\u0027est comme ça dans l\u0027original ?",
+      "revId": "8e1834bb5ac48d61aecf66747a8d41db568d49dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9bM\u003d",
+        "filename": "Superuser/res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-11T04:56:36Z",
+      "side": 1,
+      "message": "Je ne connais l\u0027origine de ce fichier, je l\u0027ai juste repris et je suis passé à coté de ça. Mais effectivement c\u0027est mieux avec \"commandes\"",
       "revId": "8e1834bb5ac48d61aecf66747a8d41db568d49dd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
