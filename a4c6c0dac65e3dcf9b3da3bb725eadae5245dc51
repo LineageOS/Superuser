@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//9aw\u003d",
+        "filename": "Superuser/res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-11T05:06:06Z",
+      "side": 1,
+      "message": "Ici je me suis calé sur les traductions déjà présentes dans  \"android_packages_apps_Settings\"",
+      "revId": "a4c6c0dac65e3dcf9b3da3bb725eadae5245dc51",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
