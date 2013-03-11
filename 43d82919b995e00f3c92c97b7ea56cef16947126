@@ -34,6 +34,24 @@
       "revId": "43d82919b995e00f3c92c97b7ea56cef16947126",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//9b0\u003d",
+        "filename": "Superuser/res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-03-11T04:45:54Z",
+      "side": 1,
+      "message": "Lol erreur d\u0027inattention",
+      "parentUuid": "AAAAeX//9cI\u003d",
+      "revId": "43d82919b995e00f3c92c97b7ea56cef16947126",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
