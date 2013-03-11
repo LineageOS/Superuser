@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//9bY\u003d",
+        "filename": "Superuser/res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-03-11T04:52:55Z",
+      "side": 1,
+      "message": "commandes est avec une majuscule ? C\u0027est comme ça dans l\u0027original ?",
+      "revId": "8e1834bb5ac48d61aecf66747a8d41db568d49dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
