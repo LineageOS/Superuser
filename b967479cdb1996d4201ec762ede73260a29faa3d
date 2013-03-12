@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//8lc\u003d",
+        "filename": "Superuser/res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-12T17:28:16Z",
+      "side": 1,
+      "message": "HTC-Geräten\n\nIch würde vielleicht auch \u0027Installation via \"Recovery\"\u0027 schreiben.",
+      "revId": "b967479cdb1996d4201ec762ede73260a29faa3d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//8lY\u003d",
+        "filename": "Superuser/res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-12T17:28:16Z",
+      "side": 1,
+      "message": "Entwickler",
+      "revId": "b967479cdb1996d4201ec762ede73260a29faa3d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//8lU\u003d",
+        "filename": "Superuser/res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-12T17:28:16Z",
+      "side": 1,
+      "message": "Superuser-PIN-Schutz",
+      "revId": "b967479cdb1996d4201ec762ede73260a29faa3d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
