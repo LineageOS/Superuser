@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//9Gw\u003d",
+        "filename": "Superuser/res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-12T03:04:57Z",
+      "side": 1,
+      "message": "Yes it was translate by \"Super-utilisateur\", I will check all file and commit new.",
+      "parentUuid": "AAAAeX//9O4\u003d",
+      "revId": "a4c6c0dac65e3dcf9b3da3bb725eadae5245dc51",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//9aw\u003d",
         "filename": "Superuser/res/values-fr/strings.xml",
         "patchSetId": 3
