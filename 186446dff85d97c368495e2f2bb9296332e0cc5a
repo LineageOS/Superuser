@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//8gU\u003d",
+        "filename": "Superuser/res/values-hu/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-03-12T21:06:08Z",
+      "side": 1,
+      "message": "Ez a mondat eredetileg hogyan szól? Nekem gyanús hogy ez így nem ok.",
+      "revId": "186446dff85d97c368495e2f2bb9296332e0cc5a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
