@@ -54,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//8M0\u003d",
+        "filename": "Superuser/res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-03-13T14:33:48Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "AAAAeX//8Ns\u003d",
+      "revId": "bc190d331defcc38998daec166fb4bdcd3a5a686",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//8No\u003d",
         "filename": "Superuser/res/values-de/strings.xml",
         "patchSetId": 2
@@ -65,6 +83,24 @@
       "writtenOn": "2013-03-13T14:30:22Z",
       "side": 1,
       "message": "Superuser wird installiert...",
+      "revId": "bc190d331defcc38998daec166fb4bdcd3a5a686",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//8Mw\u003d",
+        "filename": "Superuser/res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-03-13T14:33:48Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "AAAAeX//8No\u003d",
       "revId": "bc190d331defcc38998daec166fb4bdcd3a5a686",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -88,6 +124,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//8Mk\u003d",
+        "filename": "Superuser/res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-03-13T14:33:48Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "AAAAeX//8Nk\u003d",
+      "revId": "bc190d331defcc38998daec166fb4bdcd3a5a686",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//8NY\u003d",
         "filename": "Superuser/res/values-de/strings.xml",
         "patchSetId": 2
@@ -99,6 +153,24 @@
       "writtenOn": "2013-03-13T14:30:22Z",
       "side": 1,
       "message": "Vorschlag: \u0027ein Fehlerprotokoll\u0027 an Stelle von \u0027einen Log des Fehlers\u0027",
+      "revId": "bc190d331defcc38998daec166fb4bdcd3a5a686",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//8Mg\u003d",
+        "filename": "Superuser/res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-03-13T14:33:48Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "AAAAeX//8NY\u003d",
       "revId": "bc190d331defcc38998daec166fb4bdcd3a5a686",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
