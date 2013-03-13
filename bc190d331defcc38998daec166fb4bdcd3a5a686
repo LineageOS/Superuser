@@ -16,6 +16,92 @@
       "revId": "bc190d331defcc38998daec166fb4bdcd3a5a686",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//8Nw\u003d",
+        "filename": "Superuser/res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-13T14:30:22Z",
+      "side": 1,
+      "message": "Das würde IMHO die Bedeutung der Option nicht mehr sinnvoll (und verständlich) beschreiben. Die Option ist ohnehin schon schwer zu verstehen, da sollten wir (wieder IMHO) die Optionstexte so lang wie möglich lassen.\n\n(Disclaimer: Der Großteil der bestehenden Übersetzung ist von mir ;) )",
+      "parentUuid": "AAAAeX//8OU\u003d",
+      "revId": "bc190d331defcc38998daec166fb4bdcd3a5a686",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//8Ns\u003d",
+        "filename": "Superuser/res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-13T14:30:22Z",
+      "side": 1,
+      "message": "Vorschlag: Installation\n\n(es ist ein Dialogtitel)",
+      "revId": "bc190d331defcc38998daec166fb4bdcd3a5a686",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//8No\u003d",
+        "filename": "Superuser/res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-13T14:30:22Z",
+      "side": 1,
+      "message": "Superuser wird installiert...",
+      "revId": "bc190d331defcc38998daec166fb4bdcd3a5a686",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//8Nk\u003d",
+        "filename": "Superuser/res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-13T14:30:22Z",
+      "side": 1,
+      "message": "Superuser wird überprüft...",
+      "revId": "bc190d331defcc38998daec166fb4bdcd3a5a686",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//8NY\u003d",
+        "filename": "Superuser/res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-13T14:30:22Z",
+      "side": 1,
+      "message": "Vorschlag: \u0027ein Fehlerprotokoll\u0027 an Stelle von \u0027einen Log des Fehlers\u0027",
+      "revId": "bc190d331defcc38998daec166fb4bdcd3a5a686",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
