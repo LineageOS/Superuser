@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//8OU\u003d",
+        "filename": "Superuser/res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-03-13T13:01:45Z",
+      "side": 1,
+      "message": "Klingt in meinen Ohren irgendwie seltsam. :-)\r\n\r\nWie wäre es nur mit \"Deklaration\" ?",
+      "revId": "bc190d331defcc38998daec166fb4bdcd3a5a686",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
