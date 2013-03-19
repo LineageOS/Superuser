@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//6Hg\u003d",
+        "filename": "Superuser/res/values-ja/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1579
+      },
+      "writtenOn": "2013-03-19T09:09:09Z",
+      "side": 1,
+      "message": "please see my suggestions https://github.com/TaichiN/Superuser/commit/75a73b8a3a934108ccfe9efb961e0454d5f367f8",
+      "revId": "e2032de42a935bdf3bea8bfb43ab63c1ff5ac114",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6Hc\u003d",
+        "filename": "Superuser/res/values-ja/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1579
+      },
+      "writtenOn": "2013-03-19T09:09:09Z",
+      "side": 1,
+      "message": "see above comment",
+      "revId": "e2032de42a935bdf3bea8bfb43ab63c1ff5ac114",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6HY\u003d",
+        "filename": "Superuser/res/values-ja/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1579
+      },
+      "writtenOn": "2013-03-19T09:09:09Z",
+      "side": 1,
+      "message": "see above comment",
+      "revId": "e2032de42a935bdf3bea8bfb43ab63c1ff5ac114",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
