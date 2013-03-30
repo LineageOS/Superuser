@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//4S4\u003d",
+        "filename": "Superuser/res/values-af/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-03-30T23:03:09Z",
+      "side": 1,
+      "message": "versoek or aanvraag?  lower case",
+      "revId": "e73a277c2b2f34e5c05c7ed7e447df05c89eb172",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//4S0\u003d",
+        "filename": "Superuser/res/values-af/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-03-30T23:03:09Z",
+      "side": 1,
+      "message": "add \u0027aan; at end",
+      "revId": "e73a277c2b2f34e5c05c7ed7e447df05c89eb172",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
