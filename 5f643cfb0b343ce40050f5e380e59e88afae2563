@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//1bs\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2013-03-31T15:10:32Z",
+      "side": 1,
+      "message": "Ik vind verzoek beter klinken dan aanvraag. Ik weet alleen niet wat we in de \"oude\" SuperUser gebruikten?",
+      "revId": "5f643cfb0b343ce40050f5e380e59e88afae2563",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//1bo\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2013-03-31T15:10:32Z",
+      "side": 1,
+      "message": "\"niet niet\"",
+      "revId": "5f643cfb0b343ce40050f5e380e59e88afae2563",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//1bk\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2013-03-31T15:10:32Z",
+      "side": 1,
+      "message": "Klinkt raar, alhoewel ik zo snel niet iets beters weet....",
+      "revId": "5f643cfb0b343ce40050f5e380e59e88afae2563",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//1Y4\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2013-03-31T15:10:32Z",
+      "side": 1,
+      "message": "Dubbele taal :)",
+      "revId": "5f643cfb0b343ce40050f5e380e59e88afae2563",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//1Y0\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2013-03-31T15:10:32Z",
+      "side": 1,
+      "message": "aan -\u003e naar?",
+      "revId": "5f643cfb0b343ce40050f5e380e59e88afae2563",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
