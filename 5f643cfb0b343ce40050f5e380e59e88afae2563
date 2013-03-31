@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//1YM\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-03-31T15:24:22Z",
+      "side": 1,
+      "message": "Verzoek werd toen gebruikt. Aanvraag is iets wat ik gezien heb in een voorstel voor de Afrikaanse vertalingen, maar dat hoeft van mij niet per se.",
+      "parentUuid": "AAAAeX//1bs\u003d",
+      "revId": "5f643cfb0b343ce40050f5e380e59e88afae2563",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//1bo\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2013-03-31T15:10:32Z",
       "side": 1,
       "message": "\"niet niet\"",
+      "revId": "5f643cfb0b343ce40050f5e380e59e88afae2563",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//1YQ\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-03-31T15:24:22Z",
+      "side": 1,
+      "message": "Done (eerste \u0027niet\u0027 moet \u0027dit\u0027 zijn)",
+      "parentUuid": "AAAAeX//1bo\u003d",
       "revId": "5f643cfb0b343ce40050f5e380e59e88afae2563",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//1YI\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-03-31T15:24:22Z",
+      "side": 1,
+      "message": "Deze string wordt getoond als de gebruiker nog niets heeft ingesteld als het gaat om het toestaan of weigeren van roottoegang aan apps. In het Engels hebben ze het \u0027app policy\u0027 genoemd",
+      "parentUuid": "AAAAeX//1bk\u003d",
+      "revId": "5f643cfb0b343ce40050f5e380e59e88afae2563",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//1Y4\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 1
@@ -70,6 +124,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//1YE\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-03-31T15:24:22Z",
+      "side": 1,
+      "message": "Haha, bij de wat langere strings zet ik meestal de Nederlandse vertaling boven de Engelse (die op een nieuwe regel). Zo te zien heb ik die laatste zin niet goed geplakt. Die laatste is trouwens gehaald uit frameworks/base/core/res/res/values-nl/strings.xml (een AOSP-vertaling van een machtiging).\n\nHet hoort te zijn:\n\n\u003cstring name\u003d\"superuser_description_more\"\u003eHiermee kan de app toegang krijgen tot alle (opslag)mogelijkheden van uw apparaat, inclusief beveiligde en gevoelige hardware-elementen van uw apparaat. Schadelijke apps kunnen het systeem volledig in gevaar brengen.\u003c/string\u003e\n\nMisschien dat dat tweede \u0027van uw apparaat\u0027 overbodig is.",
+      "parentUuid": "AAAAeX//1Y4\u003d",
+      "revId": "5f643cfb0b343ce40050f5e380e59e88afae2563",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//1Y0\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 1
@@ -81,6 +153,24 @@
       "writtenOn": "2013-03-31T15:10:32Z",
       "side": 1,
       "message": "aan -\u003e naar?",
+      "revId": "5f643cfb0b343ce40050f5e380e59e88afae2563",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//1YA\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-03-31T15:24:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAeX//1Y0\u003d",
       "revId": "5f643cfb0b343ce40050f5e380e59e88afae2563",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
