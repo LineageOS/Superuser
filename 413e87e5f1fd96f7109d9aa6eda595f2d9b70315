@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+Zs\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "Persoonlijk vind ik roottoegang aanvragen mooier klinken.",
+      "parentUuid": "AAAAen//+4E\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+4A\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -30,6 +48,24 @@
       "writtenOn": "2013-04-04T21:48:07Z",
       "side": 1,
       "message": "Is aangeraden \u003d verleden tijd\n\n- Let op: als u dit niet begrijpt, is het raadzaam te weigeren",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//+Zo\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//+4A\u003d",
       "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+Zk\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//+38\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+34\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -64,6 +118,24 @@
       "writtenOn": "2013-04-04T21:48:07Z",
       "side": 1,
       "message": "- Keuze %s minuten onthouden\n\nDit zijn toch geen array waarden?",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//+Zg\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "Nee, maar is korter en \u0027this_time_only\u0027 bevat ook geen keuze/choice",
+      "parentUuid": "AAAAen//+34\u003d",
       "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -104,6 +176,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+ZM\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//+3s\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+3o\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -115,6 +205,24 @@
       "writtenOn": "2013-04-04T21:48:07Z",
       "side": 1,
       "message": "- Verzoeken tot roottoegang opslaan in logboek",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//+ZY\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "In de titel staat al logboek, lijkt mij overbodig?",
+      "parentUuid": "AAAAen//+3o\u003d",
       "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -138,6 +246,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+ZU\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//+28\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+3g\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -149,6 +275,24 @@
       "writtenOn": "2013-04-04T21:48:07Z",
       "side": 1,
       "message": "- Pincode vereisen voor het toestaan van roottoegang",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//+ZI\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//+3g\u003d",
       "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -172,6 +316,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+ZE\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//+3c\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+3U\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -183,6 +345,24 @@
       "writtenOn": "2013-04-04T21:48:07Z",
       "side": 1,
       "message": "- Verzoek automatisch weigeren na %s seconden zonder antwoord",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//+ZA\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//+3U\u003d",
       "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -206,6 +386,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+Yw\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "Volgens mij verwijst %s naar de strings \"toast\" en \"notification\", daarom is de \u0027een\u0027 weg. Verder: done.",
+      "parentUuid": "AAAAen//+3Q\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+3E\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -217,6 +415,24 @@
       "writtenOn": "2013-04-04T21:48:07Z",
       "side": 1,
       "message": "past dit? anders\n\n- Nieuwe pincode",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//+Ys\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//+3E\u003d",
       "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -240,6 +456,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+Yo\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//+24\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+20\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -251,6 +485,24 @@
       "writtenOn": "2013-04-04T21:48:07Z",
       "side": 1,
       "message": "- Verleent volledige toegang tot alle (opslag)mogelijkheden van uw apparaat, inclusief beveiligde en kwetsbare hardware-elementen. Deze machtiging is mogelijk gevaarlijk.",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//+Yc\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "\u0027Hiermee kan de app...\u0027 wordt gebruikt voor alle machtigingen. Verder is de laatste zin (\u0027schadelijke t/m brengen) rechtstreeks uit één van deze AOSP-machtigingen gehaald. Verder: done.",
+      "parentUuid": "AAAAen//+20\u003d",
       "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -274,6 +526,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+YY\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "Hier wordt \u0027vereisen\u0027 gebruikt omdat het opgeven van de machtiging nodig is om roottoegang aan te vragen. Regel 45 verwijst naar het feit dat het gewoonweg niet is opgegeven.\n\nDit is niet een letterlijke vertaling, maar ik vind \u0027Declared Permission\u0027 niet mooi.",
+      "parentUuid": "AAAAen//+2w\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+2s\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -285,6 +555,24 @@
       "writtenOn": "2013-04-04T21:48:07Z",
       "side": 1,
       "message": "- Alleen verzoeken toestaan van apps die de machtiging \\\u0027android.permission.ACCESS_SUPERUSER\\\u0027 hebben opgegeven",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//+YU\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "Alleen verzoeken toestaan van apps met de machtiging \\\u0027android.permission.ACCESS_SUPERUSER\\\u0027 (is korter)",
+      "parentUuid": "AAAAen//+2s\u003d",
       "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -308,6 +596,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+YQ\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//+2g\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+2c\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -319,6 +625,24 @@
       "writtenOn": "2013-04-04T21:48:07Z",
       "side": 1,
       "message": "- Alleen de eigenaar kan roottoegang vragen",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//+YI\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "aanvragen?",
+      "parentUuid": "AAAAen//+2c\u003d",
       "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -342,6 +666,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+YE\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//+2Y\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+2U\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -353,6 +695,24 @@
       "writtenOn": "2013-04-04T21:48:07Z",
       "side": 1,
       "message": "- Alle gebruikers kunnen roottoegang vragen",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//+YA\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "aanvragen?",
+      "parentUuid": "AAAAen//+2U\u003d",
       "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -376,6 +736,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+X8\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//+2E\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+10\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -387,6 +765,24 @@
       "writtenOn": "2013-04-04T21:48:07Z",
       "side": 1,
       "message": "- Kan Superuser niet installeren. Stuur een foutenrapport naar de ontwikkelaar.\n\n\n\u0027foutenrapport\u0027 wordt ook gebruikt in de dev settings.",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//+Xw\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "Foutrapport wordt gebruikt door:\n\n- GNOME: http://nl.gnome.org/foutrapport.php\n- Microsoft: http://support.microsoft.com/kb/276550/nl\n- Google: http://support.google.com/drive/bin/answer.py?hl\u003dnl\u0026answer\u003d2527519",
+      "parentUuid": "AAAAen//+10\u003d",
       "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -410,6 +806,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+Xs\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//+1w\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+1s\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -421,6 +835,24 @@
       "writtenOn": "2013-04-04T21:48:07Z",
       "side": 1,
       "message": "- Pincodebescherming uitgeschakeld",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//+Xo\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:56:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//+1s\u003d",
       "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
