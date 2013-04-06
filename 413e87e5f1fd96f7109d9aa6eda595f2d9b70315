@@ -55,6 +55,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+MU\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-06T04:15:39Z",
+      "side": 1,
+      "message": "Is volgens mij ook zo in de oude app gedaan. Done",
+      "parentUuid": "AAAAen//+NM\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+4A\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -265,6 +283,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+MQ\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-06T04:15:39Z",
+      "side": 1,
+      "message": "Done (en summary kent een limiet van 3 regels, lijkt mij genoeg)",
+      "parentUuid": "AAAAen//+NI\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+28\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -458,6 +494,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+MM\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-06T04:15:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//+NE\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+3E\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -575,6 +629,24 @@
       "side": 1,
       "message": "Ik vind het niet duidelijk.\n\"Hiermee kan de app toegang krijgen\" - wat is hier de app?\nIs de app Superuser, of is de app een andere app die roottoegang krijgt?\n\nAntwoord \u003d de app die roottoegang krijgt, en Superuser VERLEENT die toegang.\n\nHet is dus niet een machtiging van Superuser zelf, maar een machtiging die verleend wordt aan andere apps.\n\nDe beschrijving is een uitleg wat Superuser doet en dat is \"verlenen\".\n\n\nVerder is de vertaling over het gevaar zo overgenomen uit het Engels",
       "parentUuid": "AAAAen//+Yc\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//+MA\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-06T04:15:39Z",
+      "side": 1,
+      "message": "De nieuwe Superuser-app brengt een aantal wijzigingen met zich mee. Eén daarvan is het machtigingensysteem. Voorheen was er slechts één methode mogelijk:\n\n- Verlenen door gebruiker\n\nDe nieuwe Superuser-app maakt gebruik van twee soorten machtigingsystemen:\n\n- Verlenen door gebruiker\n- Verlenen door systeem (geautomatiseerd)\n\nMet verlenen door gebruiker bedoel ik dat de gebruiker actief (of passief: de gebruiker stelt in dat alle verzoeken automatisch toegestaan moeten worden) toestemming moet geven voor elk verzoek.\n\nMet verlenen door systeem bedoel ik dat elke app in Android standaard weinig rechten/machtigingen heeft. Om bijvoorbeeld internettoegang te hebben, moet je in AndroidManifest.xml de machtinging \\\u0027android.permission.INTERNET\\\u0027 declareren (erin zetten). Deze machtiging bestaat niet in AOSP, maar apps kunnen zelf wel machtigingen aanmaken en dit is zo\u0027n geval: \\\u0027android.permission.ACCESS_SUPERUSER\\\u0027 moet in het manifest staan. De strings \"superuser_description\" en \"superuser_description_more\" moeten dus de zinsconstructies volgen zoals deze gebruikt worden in de machtigingen die staan in frameworks/base/core/res/values(-nl)/strings.xml.\n\nMachtigingen die in AndroidManifest.xml staan worden, zoals de meesten wel weten, automatisch toegekend door het systeem, tenzij het gaat om systeemrechten (alleen kan Superuser dat niet instellen, aangezien de broncode die gebruikt wordt in de Play Store-uitgave hetzelfde is als de CM-uitgave en Superuser zich dus niet gedraagt als systeemapp (en dat zou betekenen dat álle apps die roottoegang nodig hebben op de /system-partitie moeten zitten)).\n\nOverigens moeten de strings officieel beginnen met \u0027perm*_\u0027 (dus: \u0027permlab_superuser\u0027 voor de titel en \u0027permdesc_superuser\u0027 voor de beschrijving). Je ziet dus dat Superuser zich niet echt houdt aan \u0027de regels\u0027 (misschien is \u0027afspraken beter) en mag het een en het ander nog aangepast worden.\n\nDat dit een Android-machtiging is kun je zien door naar de app Instellingen \u003e Apps te gaan en dan de eigenschappen van een app inzien. Als het goed is staat dat onderaan bij de andere machtigingen (als je een app geïnstalleerd hebt die deze machtiging declareert).",
+      "parentUuid": "AAAAen//+NA\u003d",
       "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -721,6 +793,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+L8\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-06T04:15:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//+2c\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+2Y\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -784,6 +874,24 @@
       "writtenOn": "2013-04-05T20:56:42Z",
       "side": 1,
       "message": "aanvragen?",
+      "parentUuid": "AAAAen//+2U\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//+L4\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-06T04:15:39Z",
+      "side": 1,
+      "message": "Done",
       "parentUuid": "AAAAen//+2U\u003d",
       "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
@@ -873,6 +981,24 @@
       "side": 1,
       "message": "Jammer dat we dit dan in de Dev Settings weer niet mogen aanpassen omdat dat een AOSP string is....",
       "parentUuid": "AAAAen//+Xw\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//+L0\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-06T04:15:39Z",
+      "side": 1,
+      "message": "Inderdaad...",
+      "parentUuid": "AAAAen//+M8\u003d",
       "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
