@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+NM\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-06T03:21:41Z",
+      "side": 1,
+      "message": "Ik niet en Google geeft ook meer hits die te maken hebben met Android op \"roottoegang vragen\". \"roottoegang aanvragen\" levert bijna geen informatie die hiermee te maken heeft.",
+      "parentUuid": "AAAAen//+Zs\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+4A\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -229,6 +247,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+NI\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-06T03:21:41Z",
+      "side": 1,
+      "message": "Ik vind het wel duidelijker.",
+      "parentUuid": "AAAAen//+ZY\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+28\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -404,6 +440,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+NE\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-06T03:21:41Z",
+      "side": 1,
+      "message": "Ja dat klopt, dan zit je inderdaad met het hoofdletter probleem. Zo laten dan.",
+      "parentUuid": "AAAAen//+Yw\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+3E\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -503,6 +557,24 @@
       "side": 1,
       "message": "\u0027Hiermee kan de app...\u0027 wordt gebruikt voor alle machtigingen. Verder is de laatste zin (\u0027schadelijke t/m brengen) rechtstreeks uit één van deze AOSP-machtigingen gehaald. Verder: done.",
       "parentUuid": "AAAAen//+20\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//+NA\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-06T03:21:41Z",
+      "side": 1,
+      "message": "Ik vind het niet duidelijk.\n\"Hiermee kan de app toegang krijgen\" - wat is hier de app?\nIs de app Superuser, of is de app een andere app die roottoegang krijgt?\n\nAntwoord \u003d de app die roottoegang krijgt, en Superuser VERLEENT die toegang.\n\nHet is dus niet een machtiging van Superuser zelf, maar een machtiging die verleend wordt aan andere apps.\n\nDe beschrijving is een uitleg wat Superuser doet en dat is \"verlenen\".\n\n\nVerder is de vertaling over het gevaar zo overgenomen uit het Engels",
+      "parentUuid": "AAAAen//+Yc\u003d",
       "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -783,6 +855,24 @@
       "side": 1,
       "message": "Foutrapport wordt gebruikt door:\n\n- GNOME: http://nl.gnome.org/foutrapport.php\n- Microsoft: http://support.microsoft.com/kb/276550/nl\n- Google: http://support.google.com/drive/bin/answer.py?hl\u003dnl\u0026answer\u003d2527519",
       "parentUuid": "AAAAen//+10\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//+M8\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-06T03:21:41Z",
+      "side": 1,
+      "message": "Jammer dat we dit dan in de Dev Settings weer niet mogen aanpassen omdat dat een AOSP string is....",
+      "parentUuid": "AAAAen//+Xw\u003d",
       "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
