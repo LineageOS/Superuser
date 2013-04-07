@@ -653,6 +653,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//9wk\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-07T03:46:20Z",
+      "side": 1,
+      "message": "1) \"Dat dit een Android-machtiging is kun je zien door naar de app Instellingen \u003e Apps te gaan\".\n\nDat is dus alleen zo als je de Play Store versie installeert. Als je SU gebruikt die meekomt met CM, staat die helemaal niet bij de apps en zie je dus  de machtigingen niet. Vandaar dat ik dit dus niet had gezien (heb even de PS versie geinstalleerd om te vergelijken)\n\n\nWat ik dan wel vreemd vind is dat deze machtigingen niet in de Play Store vermeld staan, kijk maar naar de machtigingen tab in de Play store: Machtigingen\nVOOR DEZE APP ZIJN GEEN ONVEILIGE MACHTIGINGEN VEREIST.\n\nSuperuser heeft ook geen AndroidManifest.xml in Github....\n\n\n2) \"\\\u0027android.permission.ACCESS_SUPERUSER\\\u0027 moet in het manifest staan\"\n\nDit is niet helemaal waar, het MOET niet. Je kan in Superuser wel de optie aanvinken om alleen apps roottoegang te geven die deze permission WEL in hun manifest hebben staan. Dit is dus de optie van r.49.\nLaat je die optie uit staan, dan kunnen apps zonder deze permissie ook gewoon roottoegang krijgen van Superuser.\n\n\n\nToch vind ik dat er duidelijker in moet staan dat Superuser de volledige toegang verleent (Superuser grants full access), dus verleent aan andere apps.",
+      "parentUuid": "AAAAen//+MA\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+2w\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 2
