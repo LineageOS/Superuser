@@ -689,6 +689,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//7cE\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-13T16:43:39Z",
+      "side": 1,
+      "message": "2) Ah ik wist nog niet dat ze het na een jaar wel gingen verplichten!",
+      "parentUuid": "AAAAen//7iY\u003d",
+      "revId": "413e87e5f1fd96f7109d9aa6eda595f2d9b70315",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+2w\u003d",
         "filename": "Superuser/res/values-nl/strings.xml",
         "patchSetId": 2
