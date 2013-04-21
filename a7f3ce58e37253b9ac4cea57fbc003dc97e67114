@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//35g\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-21T15:26:45Z",
+      "side": 1,
+      "message": "Alleen ADB",
+      "revId": "a7f3ce58e37253b9ac4cea57fbc003dc97e67114",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//35c\u003d",
+        "filename": "Superuser/res/values-nl/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-21T15:26:45Z",
+      "side": 1,
+      "message": "Apps en ADB",
+      "revId": "a7f3ce58e37253b9ac4cea57fbc003dc97e67114",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
