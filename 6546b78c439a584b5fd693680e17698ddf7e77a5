@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "iLoLUX0",
+        "filename": "Superuser/res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-05-22T00:45:09Z",
+      "side": 1,
+      "message": "\"... es mejor que no la aceptes.\". Up to you",
+      "revId": "6546b78c439a584b5fd693680e17698ddf7e77a5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
