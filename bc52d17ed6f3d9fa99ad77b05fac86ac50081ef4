@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "iNqZZSE",
+        "filename": "Superuser/res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-05-22T03:24:48Z",
+      "side": 1,
+      "message": "\"permitas\", to follow the \"allow\" button.",
+      "revId": "bc52d17ed6f3d9fa99ad77b05fac86ac50081ef4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "iLqesQU",
+        "filename": "Superuser/res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-05-22T03:24:48Z",
+      "side": 1,
+      "message": "\"denegarán\" to follow the \"deny\" button.",
+      "revId": "bc52d17ed6f3d9fa99ad77b05fac86ac50081ef4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "iJqj7U8",
+        "filename": "Superuser/res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-05-22T03:24:48Z",
+      "side": 1,
+      "message": "same above",
+      "revId": "bc52d17ed6f3d9fa99ad77b05fac86ac50081ef4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
