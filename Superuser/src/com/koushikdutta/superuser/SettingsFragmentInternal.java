@@ -140,7 +140,7 @@ public class SettingsFragmentInternal extends BetterListFragmentInternal {
                     setSummary(R.string.apps_and_adb);
                     break;
                 case Settings.SUPERUSER_ACCESS_DISABLED:
-                    setSummary(R.string.disabled);
+                    setSummary(R.string.acccess_disabled);
                     break;
                 default:
                     setSummary(R.string.apps_and_adb);
