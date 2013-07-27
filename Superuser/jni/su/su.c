@@ -32,9 +32,15 @@
 #include <sys/stat.h>
 #include <stdarg.h>
 #include <sys/types.h>
+#include <pthread.h>
+#include <termios.h> 
 
 #include "su.h"
 #include "utils.h"
+
+extern int is_daemon;
+extern int daemon_from_uid;
+extern int daemon_from_pid;
 
 unsigned get_shell_uid() {
   struct passwd* ppwd = getpwnam("shell");
@@ -67,8 +73,8 @@ void exec_log(char *priority, char* logline) {
   int pid;
   if ((pid = fork()) == 0) {
       int zero = open("/dev/zero", O_RDONLY | O_CLOEXEC);
-      dup2(zero, 0);
       int null = open("/dev/null", O_WRONLY | O_CLOEXEC);
+      dup2(null, 0);
       dup2(null, 1);
       dup2(null, 2);
       execl("/system/bin/log", "/system/bin/log", "-p", priority, "-t", LOG_TAG, logline);
@@ -373,7 +379,7 @@ do {                                                \
     }                                               \
 } while (0)
 
-#define write_string(fd, name, data)        \
+#define write_string_data(fd, name, data)        \
 do {                                        \
     write_data(fd, name, strlen(name));     \
     write_data(fd, data, strlen(data));     \
@@ -384,19 +390,19 @@ do {                                        \
 do {                                        \
     char buf[16];                           \
     snprintf(buf, sizeof(buf), "%d", data); \
-    write_string(fd, name, buf);            \
+    write_string_data(fd, name, buf);            \
 } while (0)
 
     write_token(fd, "version", PROTO_VERSION);
     write_token(fd, "binary.version", VERSION_CODE);
     write_token(fd, "pid", ctx->from.pid);
-    write_string(fd, "from.name", ctx->from.name);
-    write_string(fd, "to.name", ctx->to.name);
+    write_string_data(fd, "from.name", ctx->from.name);
+    write_string_data(fd, "to.name", ctx->to.name);
     write_token(fd, "from.uid", ctx->from.uid);
     write_token(fd, "to.uid", ctx->to.uid);
-    write_string(fd, "from.bin", ctx->from.bin);
+    write_string_data(fd, "from.bin", ctx->from.bin);
     // TODO: Fix issue where not using -c does not result a in a command
-    write_string(fd, "command", get_command(&ctx->to));
+    write_string_data(fd, "command", get_command(&ctx->to));
     write_token(fd, "eof", PROTO_VERSION);
     return 0;
 }
@@ -587,6 +593,27 @@ int access_disabled(const struct su_initiator *from) {
 }
 
 int main(int argc, char *argv[]) {
+    // start up in daemon mode if prompted
+    if (argc == 2 && strcmp(argv[1], "--daemon") == 0) {
+        return run_daemon();
+    }
+
+    struct stat st;
+    // Exec /superuser/su if it exists, and we are not root.
+    // This is necessary for 4.3, as /system is now nosuid.
+    char* superuser_binary = "/superuser/su";
+    if (geteuid() != AID_ROOT && getuid() != AID_ROOT && stat(superuser_binary, &st) == 0 && strcmp(argv[0], superuser_binary) != 0) {
+        LOGD("execing /superuser/su daemon");
+        LOGE("currently (%ld, %ld)", getuid(), geteuid());
+        argv[0] = superuser_binary;
+        return execvp(superuser_binary, argv);
+    }
+    else if (strcmp(argv[0], superuser_binary) == 0 && !is_daemon) {
+        // if this is the daemon client, connect to the deamon and send what to do.
+        LOGD("starting daemon client");
+        return connect_daemon(argc, argv);
+    }
+
     // Sanitize all secure environment variables (from linker_environ.c in AOSP linker).
     /* The same list than GLibc at this point */
     static const char* const unsec_vars[] = {
@@ -659,7 +686,6 @@ int main(int argc, char *argv[]) {
             .base_path = REQUESTOR_DATA_PATH REQUESTOR
         },
     };
-    struct stat st;
     int c, socket_serv_fd, fd;
     char buf[64], *result;
     policy_t dballow;
