@@ -262,14 +262,6 @@ void set_identity(unsigned int uid) {
     }
 }
 
-static void socket_cleanup(struct su_context *ctx) {
-    if (ctx && ctx->sock_path[0]) {
-        if (unlink(ctx->sock_path))
-            PLOGE("unlink (%s)", ctx->sock_path);
-        ctx->sock_path[0] = 0;
-    }
-}
-
 /*
  * For use in signal handlers/atexit-function
  * NOTE: su_ctx points to main's local variable.
@@ -278,19 +270,19 @@ static void socket_cleanup(struct su_context *ctx) {
 static struct su_context *su_ctx = NULL;
 
 static void cleanup(void) {
-    socket_cleanup(su_ctx);
 }
 
 static void cleanup_signal(int sig) {
-    socket_cleanup(su_ctx);
     exit(128 + sig);
 }
 
+static struct sockaddr_un sun;
+
 static int socket_create_temp(char *path, size_t len) {
     int fd;
-    struct sockaddr_un sun;
 
     fd = socket(AF_LOCAL, SOCK_STREAM, 0);
+    LOGD("socket: %d", fd);
     if (fd < 0) {
         PLOGE("socket");
         return -1;
@@ -302,18 +294,14 @@ static int socket_create_temp(char *path, size_t len) {
 
     memset(&sun, 0, sizeof(sun));
     sun.sun_family = AF_LOCAL;
-    snprintf(path, len, "%s/.socket%d", REQUESTOR_CACHE_PATH, getpid());
-    memset(sun.sun_path, 0, sizeof(sun.sun_path));
-    snprintf(sun.sun_path, sizeof(sun.sun_path), "%s", path);
+    snprintf(path, len, "/socket%d", getpid());
+    int namelen  = strlen(path);
+    sun.sun_path[0] = 0;
+    memcpy(sun.sun_path + 1, path, namelen);
+    
+    int alen = namelen + offsetof(struct sockaddr_un, sun_path) + 1;
 
-    /*
-     * Delete the socket to protect from situations when
-     * something bad occured previously and the kernel reused pid from that process.
-     * Small probability, isn't it.
-     */
-    unlink(sun.sun_path);
-
-    if (bind(fd, (struct sockaddr*)&sun, sizeof(sun)) < 0) {
+    if (bind(fd, (struct sockaddr*)&sun, alen) < 0) {
         PLOGE("bind");
         goto err;
     }
@@ -347,6 +335,7 @@ static int socket_accept(int serv_fd) {
         return -1;
     }
 
+    socklen_t sun_len = sizeof(sun);
     fd = accept(serv_fd, NULL, NULL);
     if (fd < 0) {
         PLOGE("accept");
@@ -361,7 +350,6 @@ static int socket_send_request(int fd, const struct su_context *ctx) {
 do {                                                \
     size_t __len = htonl(data_len);                 \
     __len = write((fd), &__len, sizeof(__len));     \
-    LOGE("%d", __len);\
     if (__len != sizeof(__len)) {                   \
         PLOGE("write(" #data ")");                  \
         return -1;                                  \
@@ -410,6 +398,7 @@ static int socket_receive_result(int fd, char *result, ssize_t result_len) {
         PLOGE("read(result)");
         return -1;
     }
+    LOGD("read: %d", len);
     result[len] = '\0';
 
     return 0;
@@ -806,12 +795,6 @@ int main(int argc, char *argv[]) {
 
     ctx.umask = umask(027);
 
-    int ret = mkdir(REQUESTOR_CACHE_PATH, 0770);
-    if (chown(REQUESTOR_CACHE_PATH, st.st_uid, st.st_gid)) {
-        PLOGE("chown (%s, %ld, %ld)", REQUESTOR_CACHE_PATH, st.st_uid, st.st_gid);
-        deny(&ctx);
-    }
-
     if (setgroups(0, NULL)) {
         PLOGE("setgroups");
         deny(&ctx);
@@ -870,7 +853,6 @@ int main(int argc, char *argv[]) {
 
     close(fd);
     close(socket_serv_fd);
-    socket_cleanup(&ctx);
 
     result = buf;
 

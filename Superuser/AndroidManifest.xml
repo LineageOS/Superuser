@@ -84,7 +84,6 @@
             android:excludeFromRecents="true"
             android:exported="false"
             android:label="@string/request"
-            android:process=":superuser"
             android:taskAffinity="internal.superuser"
             android:theme="@style/RequestTheme" />
 
