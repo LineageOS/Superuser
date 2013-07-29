@@ -42,8 +42,8 @@
     <string name="request_timeout">Vypršení požadavku</string>
     <string name="request_timeout_summary">Superuser požadavky budou automaticky zakázány po %s sekundách</string>
     <string name="notifications">Upozornění</string>
-    <string name="none">Žádné</string>
-    <string name="notifications_summary">%s bude zobrazen, při udělení povolení nebo zákazu Superuser oprávnění</string>
+    <string name="none">žádné</string>
+    <string name="notifications_summary">Při udělení povolení nebo zákazu oprávnění Superuser bude zobrazeno %s</string>
     <string name="enter_pin">Vložit PIN</string>
     <string name="enter_new_pin">Vložit nový PIN</string>
     <string name="incorrect_pin">Špatný PIN</string>
@@ -53,10 +53,10 @@
     <string name="number_seconds">%s sekund</string>
     <string name="superuser_granted">Superuser povolen pro %s</string>
     <string name="superuser_denied">Superuser zakázán pro %s</string>
-    <string name="toast">Oznámení</string>
-    <string name="notification">Upozornění</string>
+    <string name="toast">oznámení</string>
+    <string name="notification">upozornění</string>
     <string name="no_notification">Nebude zobrazeno žádné upozornění</string>
-    <string name="developer_warning">Varování pro vývojáře:\nandroid.permission.ACCESS_SUPERUSER\nnení deklarováno v manifestu.</string>
+    <string name="developer_warning">Varování pro vývojáře:\nandroid.permission.ACCESS_SUPERUSER\nnení specifikováno v manifestu.</string>
     <string name="superuser_description">plná oprávnění pro všechny vlastnosti zařízení a úložiště</string>
     <string name="superuser_description_more">Superuser umožní plný přístup ke všem vlastnostem zařízení a úložišti, včetně bezpečnostně citlivých částí zařízení. Toto oprávnění může být nebezpečné.</string>
     <string name="declared_permission">Deklarované oprávnění</string>
@@ -90,7 +90,7 @@
     <string name="install_success">Instalace Superusera byla úspěšná.</string>
     <string name="su_binary_outdated">Příkaz \"su\" je neaktuální.</string>
     <string name="superuser_access">Superuser přístup</string>
-    <string name="access_disabled">Vypnuto</string>
+    <string name="disabled">Vypnuto</string>
     <string name="apps_only">Pouze aplikace</string>
     <string name="adb_only">Pouze ADB</string>
     <string name="apps_and_adb">Aplikace a ADB</string>
