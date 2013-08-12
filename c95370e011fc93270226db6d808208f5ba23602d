@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dae975fb_2beff5b1",
+        "filename": "Superuser/res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-12T20:18:39Z",
+      "side": 1,
+      "message": "This is wrong...",
+      "revId": "c95370e011fc93270226db6d808208f5ba23602d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
