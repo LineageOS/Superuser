@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dae975fb_c2f8427f",
+        "filename": "Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 65
+      },
+      "writtenOn": "2013-08-17T05:39:54Z",
+      "side": 1,
+      "message": "Why relative path?",
+      "revId": "c9302760b2add7ba39fd9b27e6c80e94c9c75651",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
