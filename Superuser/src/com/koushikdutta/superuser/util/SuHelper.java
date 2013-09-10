@@ -5,7 +5,8 @@ import com.koushikdutta.superuser.util.exceptions.*;
 import android.content.Context;
 import android.util.Log;
 
-public class SuHelper {
+
+public final class SuHelper {
     public static String CURRENT_VERSION = "13";
     public static void checkSu(Context context) throws IllegalResultException, 
     IllegalBinaryException, Exception {
