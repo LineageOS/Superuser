@@ -11,7 +11,7 @@ public final class SuHelper {
     public static void checkSu(Context context) throws IllegalResultException, 
     IllegalBinaryException, Exception {
         Process p = Runtime.getRuntime().exec("su -v");
-        String result = Settings.readToEnd(p.getInputStream());
+		String result = Settings.readToEnd(p.getInputStream());
         Log.i("Superuser", "Result: " + result);
         final int exitValue = p.waitFor();
         if (exitValue != 0)
