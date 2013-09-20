@@ -318,7 +318,7 @@ public class Settings {
     public static final int SUPERUSER_ACCESS_APPS_AND_ADB = 3;
     public static int getSuperuserAccess() {
         try {
-            Class c = Class.forName("android.os.SystemProperties");
+            Class<?> c = Class.forName("android.os.SystemProperties");
             Method m = c.getMethod("get", String.class);
             String value = (String)m.invoke(null, "persist.sys.root_access");
             int val = Integer.valueOf(value);
@@ -340,7 +340,7 @@ public class Settings {
     public static void setSuperuserAccess(int mode) {
         try {
             if (android.os.Process.myUid() == android.os.Process.SYSTEM_UID) {
-                Class c = Class.forName("android.os.SystemProperties");
+                Class<?> c = Class.forName("android.os.SystemProperties");
                 Method m = c.getMethod("set", String.class, String.class);
                 m.invoke(null, "persist.sys.root_access", String.valueOf(mode));
                 if (mode == getSuperuserAccess()) return;

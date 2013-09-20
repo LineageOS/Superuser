@@ -84,7 +84,7 @@ public class SuReceiver extends BroadcastReceiver {
             .setSmallIcon(R.drawable.ic_stat_notification);
             
             NotificationManager nm = (NotificationManager)context.getSystemService(Context.NOTIFICATION_SERVICE);
-            nm.notify(NOTIFICATION_ID, builder.getNotification());
+            nm.notify(NOTIFICATION_ID, builder.build());
             break;
         case Settings.NOTIFICATION_TYPE_TOAST:
             Toast.makeText(context, toast, Toast.LENGTH_SHORT).show();
