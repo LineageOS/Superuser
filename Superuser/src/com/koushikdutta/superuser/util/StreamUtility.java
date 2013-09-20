@@ -23,7 +23,6 @@ import org.json.JSONObject;
 import android.net.http.AndroidHttpClient;
 
 public class StreamUtility {
-	private static final String LOGTAG = StreamUtility.class.getSimpleName();
     public static void fastChannelCopy(final ReadableByteChannel src, final WritableByteChannel dest) throws IOException {
         final ByteBuffer buffer = ByteBuffer.allocateDirect(1 << 17);
         while (src.read(buffer) != -1) {
@@ -50,13 +49,13 @@ public class StreamUtility {
         // copy the channels
         fastChannelCopy(inputChannel, outputChannel);
     }
-    
+
     public static String downloadUriAsString(String uri) throws IOException {
         HttpGet get = new HttpGet(uri);
         return downloadUriAsString(get);
     }
 
-    
+
     public static String downloadUriAsString(final HttpUriRequest req) throws IOException {
         AndroidHttpClient client = AndroidHttpClient.newInstance("Android");
         try {
@@ -76,8 +75,7 @@ public class StreamUtility {
         return new JSONObject(downloadUriAsString(req));
     }
 
-    public static byte[] readToEndAsArray(InputStream input) throws IOException
-    {
+    public static byte[] readToEndAsArray(InputStream input) throws IOException {
         DataInputStream dis = new DataInputStream(input);
         byte[] stuff = new byte[1024];
         ByteArrayOutputStream buff = new ByteArrayOutputStream();
@@ -89,32 +87,32 @@ public class StreamUtility {
         input.close();
         return buff.toByteArray();
     }
-    
+
     public static void eat(InputStream input) throws IOException {
         byte[] stuff = new byte[1024];
         while (input.read(stuff) != -1);
     }
-    
-	public static String readToEnd(InputStream input) throws IOException
-	{
-	    return new String(readToEndAsArray(input));
-	}
+
+    public static String readToEnd(InputStream input) throws IOException {
+        return new String(readToEndAsArray(input));
+    }
 
     static public String readFile(String filename) throws IOException {
         return readFile(new File(filename));
     }
-    
+
     static public String readFile(File file) throws IOException {
         byte[] buffer = new byte[(int) file.length()];
         DataInputStream input = new DataInputStream(new FileInputStream(file));
         input.readFully(buffer);
+        input.close();
         return new String(buffer);
     }
-    
+
     public static void writeFile(File file, String string) throws IOException {
         writeFile(file.getAbsolutePath(), string);
     }
-    
+
     public static void writeFile(String file, String string) throws IOException {
         File f = new File(file);
         f.getParentFile().mkdirs();
