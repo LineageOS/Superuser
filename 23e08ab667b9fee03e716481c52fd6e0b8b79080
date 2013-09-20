@@ -1,0 +1,208 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5afe65bd_45090a31",
+        "filename": "Superuser/res/layout/grace_period_prompt_dialog.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 6765
+      },
+      "writtenOn": "2013-09-20T12:22:36Z",
+      "side": 1,
+      "message": "Tabs to spaces please. Try to keep it consistent with the rest of the file.",
+      "revId": "23e08ab667b9fee03e716481c52fd6e0b8b79080",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5afe65bd_05031211",
+        "filename": "Superuser/res/layout/grace_period_prompt_dialog.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 6765
+      },
+      "writtenOn": "2013-09-20T12:22:36Z",
+      "side": 1,
+      "message": "Remove trailing whitespace",
+      "revId": "23e08ab667b9fee03e716481c52fd6e0b8b79080",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5afe65bd_25060e21",
+        "filename": "Superuser/res/layout/grace_period_prompt_dialog.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 6765
+      },
+      "writtenOn": "2013-09-20T12:22:36Z",
+      "side": 1,
+      "message": "Remove trailing whitespace here as well",
+      "revId": "23e08ab667b9fee03e716481c52fd6e0b8b79080",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5afe65bd_a8089329",
+        "filename": "Superuser/res/layout/grace_period_prompt_dialog.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 6765
+      },
+      "writtenOn": "2013-09-20T12:22:36Z",
+      "side": 1,
+      "message": "Fix tabs here as well.",
+      "revId": "23e08ab667b9fee03e716481c52fd6e0b8b79080",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5afe65bd_e8fe8b04",
+        "filename": "Superuser/res/layout/grace_period_prompt_dialog.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 6765
+      },
+      "writtenOn": "2013-09-20T12:22:36Z",
+      "side": 1,
+      "message": "and here",
+      "revId": "23e08ab667b9fee03e716481c52fd6e0b8b79080",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5afe65bd_c803cf0c",
+        "filename": "Superuser/res/layout/grace_period_prompt_dialog.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 6765
+      },
+      "writtenOn": "2013-09-20T12:22:36Z",
+      "side": 1,
+      "message": "...and here",
+      "revId": "23e08ab667b9fee03e716481c52fd6e0b8b79080",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5afe65bd_880dd739",
+        "filename": "Superuser/res/values-el/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 6765
+      },
+      "writtenOn": "2013-09-20T12:22:36Z",
+      "side": 1,
+      "message": "More trailing whitespace in this file",
+      "revId": "23e08ab667b9fee03e716481c52fd6e0b8b79080",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5afe65bd_6813bb5d",
+        "filename": "Superuser/res/values-fi/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 6765
+      },
+      "writtenOn": "2013-09-20T12:22:36Z",
+      "side": 1,
+      "message": "More tabs to fix.",
+      "revId": "23e08ab667b9fee03e716481c52fd6e0b8b79080",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5afe65bd_4810ff4e",
+        "filename": "Superuser/res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 6765
+      },
+      "writtenOn": "2013-09-20T12:22:36Z",
+      "side": 1,
+      "message": "Fix this please.",
+      "revId": "23e08ab667b9fee03e716481c52fd6e0b8b79080",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5afe65bd_281dc366",
+        "filename": "Superuser/src/com/koushikdutta/superuser/SettingsFragmentInternal.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 361,
+      "author": {
+        "id": 6765
+      },
+      "writtenOn": "2013-09-20T12:22:36Z",
+      "side": 1,
+      "message": "Horrible styling, please fix this file too.",
+      "revId": "23e08ab667b9fee03e716481c52fd6e0b8b79080",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5afe65bd_081a076f",
+        "filename": "Superuser/src/com/koushikdutta/superuser/util/Settings.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 6765
+      },
+      "writtenOn": "2013-09-20T12:22:36Z",
+      "side": 1,
+      "message": "More whitespace issues here.",
+      "revId": "23e08ab667b9fee03e716481c52fd6e0b8b79080",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5afe65bd_e8256bae",
+        "filename": "Superuser/src/com/koushikdutta/superuser/util/SuHelper.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 6765
+      },
+      "writtenOn": "2013-09-20T12:22:36Z",
+      "side": 1,
+      "message": "More tabs to fix.",
+      "revId": "23e08ab667b9fee03e716481c52fd6e0b8b79080",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
