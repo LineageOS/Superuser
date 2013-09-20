@@ -33,6 +33,8 @@ import android.view.MenuItem.OnMenuItemClickListener;
 import com.koushikdutta.superuser.util.Settings;
 import com.koushikdutta.superuser.util.StreamUtility;
 import com.koushikdutta.superuser.util.SuHelper;
+import com.koushikdutta.superuser.util.exceptions.IllegalBinaryException;
+import com.koushikdutta.superuser.util.exceptions.IllegalResultException;
 import com.koushikdutta.widgets.BetterListActivity;
 
 import java.io.File;
@@ -188,14 +190,23 @@ public class MainActivity extends BetterListActivity {
                     Process p = Runtime.getRuntime().exec("su");
                     p.getOutputStream().write(command.getBytes());
                     p.getOutputStream().close();
-                    if (p.waitFor() != 0)
-                        throw new Exception("non zero result");
-                    SuHelper.checkSu(MainActivity.this);
-                    _error = false;
+                    final int returnValue = p.waitFor();
+                    if (returnValue != 0)
+                     throw new IllegalResultException("Expected zero (0) but returned "+returnValue+".");
+                 SuHelper.checkSu(MainActivity.this);
+                 _error = false;
                 }
-                catch (Exception ex) {
+                catch (IllegalBinaryException ibe){
                     _error = true;
-                    Log.e("Superuser", "error upgrading", ex);
+                    Log.e("Superuser", ibe.getMessage(), ibe);
+                }
+                catch (IllegalResultException ire){
+                    _error = true;
+                    Log.e("Superuser", ire.getMessage(), ire);
+                }
+                catch (Exception e) {
+                    _error = true;
+                    Log.e("Superuser", "error upgrading", e);
                 }
                 finally{
                     dlg.dismiss();
@@ -290,6 +301,14 @@ public class MainActivity extends BetterListActivity {
                 try {
                     SuHelper.checkSu(MainActivity.this);
                     _error = false;
+                }
+                catch (IllegalBinaryException ibe) {
+                    ibe.printStackTrace();
+                    _error = true;
+                }
+                catch (IllegalResultException ire) {
+                    ire.printStackTrace();
+                    _error = true;
                 }
                 catch (Exception e) {
                     e.printStackTrace();
