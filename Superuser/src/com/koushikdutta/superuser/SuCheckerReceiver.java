@@ -11,6 +11,8 @@ import android.util.Log;
 
 import com.koushikdutta.superuser.util.Settings;
 import com.koushikdutta.superuser.util.SuHelper;
+import com.koushikdutta.superuser.util.exceptions.IllegalBinaryException;
+import com.koushikdutta.superuser.util.exceptions.IllegalResultException;
 
 public class SuCheckerReceiver extends BroadcastReceiver {
     public static void doNotification(Context context) {
@@ -54,6 +56,22 @@ public class SuCheckerReceiver extends BroadcastReceiver {
                 public void run() {
                     try {
                         SuHelper.checkSu(context);
+                    }
+                    catch (IllegalResultException ire){
+                    	handler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                doNotification(context);
+                            }
+                        });
+                    }
+                    catch(IllegalBinaryException ibe){
+                    	handler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                doNotification(context);
+                            }
+                        });
                     }
                     catch (Exception ex) {
                         handler.post(new Runnable() {
