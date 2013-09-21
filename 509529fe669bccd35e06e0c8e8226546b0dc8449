@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5afe65bd_483c7f2f",
+        "filename": "Superuser/res/values-es/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-09-21T05:43:43Z",
+      "side": 1,
+      "message": "We are using Unicode for ellipsis.",
+      "revId": "509529fe669bccd35e06e0c8e8226546b0dc8449",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
