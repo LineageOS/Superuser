@@ -54,6 +54,7 @@ import com.koushikdutta.widgets.ListItem;
 public class PolicyFragmentInternal extends ListContentFragmentInternal {
 
  private static final String DATA_BUNDLE_KEY = "deleted";
+ private LogFragmentInternal internal;
 
     public PolicyFragmentInternal(FragmentInterfaceWrapper fragment) {
         super(fragment);
@@ -163,32 +164,38 @@ public class PolicyFragmentInternal extends ListContentFragmentInternal {
           getString(R.string.details)};
         builder.setItems(items, new OnClickListener() {
             @SuppressLint("HandlerLeak")
-   @Override
+            @Override
             public void onClick(DialogInterface dialog, int which) {
                 switch (which) {
                 case 0:
                     if(permissionChange.equalsIgnoreCase(
                      getResources().getText(R.string.allow).toString())){
                  up.setPolicy(UidPolicy.ALLOW);
+                 if(internal != null)
+                     internal.updateAtWill(up,true);
                     }
                     else{
-                 up.setPolicy(UidPolicy.DENY);
-                    }
+                  up.setPolicy(UidPolicy.DENY);
+                  if(internal != null)
+                      internal.updateAtWill(up,false);
+                 }
                     SuDatabaseHelper.setPolicy(getActivity(), up);
-                    //update the adapters
+                  //update the adapters
                     load();
                     break;
                 case 1:
-                    final Handler handler = new Handler(){
-                 @Override
-                 public void handleMessage(Message msg) {
-                     // TODO Auto-generated method stub
-                     if(msg.getData().getBoolean(DATA_BUNDLE_KEY))
-                  removeItem(item);
-                     else
-                  showErrorDialog(up, R.string.db_delete_error);
-                 }
-                    };
+                 final Handler handler = new Handler(){
+                  @Override
+                  public void handleMessage(Message msg) {
+                   // TODO Auto-generated method stub
+                   if(msg.getData().getBoolean(DATA_BUNDLE_KEY)){
+                       removeItem(item);
+                       load();
+                   }
+                   else
+                    showErrorDialog(up, R.string.db_delete_error);
+                  }
+                 };
                     new Thread(){
                  public void run(){
                      final boolean done = SuDatabaseHelper.delete(getActivity(), up);
@@ -241,7 +248,9 @@ public class PolicyFragmentInternal extends ListContentFragmentInternal {
 
     FragmentInterfaceWrapper setContentNative(final ListItem li, final UidPolicy up) {
         LogNativeFragment l = createLogNativeFragment();
-        l.getInternal().setUidPolicy(up);
+        internal = l.getInternal();
+        internal.setParent(this);
+        internal.setUidPolicy(up);
         if (up != null) {
             Bundle args = new Bundle();
             args.putString("command", up.command);
@@ -249,15 +258,17 @@ public class PolicyFragmentInternal extends ListContentFragmentInternal {
             args.putInt("desiredUid", up.desiredUid);
             l.setArguments(args);
         }
-        l.getInternal().setListContentId(getFragment().getId());
+        internal.setListContentId(getFragment().getId());
         return l;
     }
 
     void setContent(final ListItem li, final UidPolicy up) {
         if (getActivity() instanceof FragmentActivity) {
             LogFragment l = new LogFragment();
-            l.getInternal().setUidPolicy(up);
-            l.getInternal().setListContentId(getFragment().getId());
+            internal = l.getInternal();
+            internal.setParent(this);
+            internal.setUidPolicy(up);
+            internal.setListContentId(getFragment().getId());
             mContent = l;
         }
         else {
@@ -308,5 +319,4 @@ public class PolicyFragmentInternal extends ListContentFragmentInternal {
             }
         });
     }
-
 }
