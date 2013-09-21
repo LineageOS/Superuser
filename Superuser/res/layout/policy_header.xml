@@ -51,6 +51,25 @@
             android:layout_height="1dp"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:background="?android:attr/listDivider" />
+        
+    	<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	
+	        <TextView
+	            style="@android:style/TextAppearance.Medium"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:paddingBottom="@dimen/section_padding"
+	            android:paddingLeft="@dimen/section_padding"
+	            android:text="@string/permission" />
+	
+	        <include
+	            android:layout_weight="@dimen/golden_ratio"
+	            layout="@layout/permission_toggle" />
+	    </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
