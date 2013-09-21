@@ -207,6 +207,13 @@ public class PolicyFragmentInternal extends ListContentFragmentInternal {
                 return true;
             }
         });
+        /* When you are in LogFragmentInternal screen and you rotate the device
+         * you are directed to the first screen (PolicyFragment).
+         * Then you will notice that the trash menu icon still exists.
+         * This is a bug and this should not happen and below is a way
+         * to extinct this bug.
+         */
+        menu.removeItem(R.id.delete);
     }
 
 }
