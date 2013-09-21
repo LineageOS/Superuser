@@ -53,13 +53,15 @@ import com.koushikdutta.widgets.ListItem;
 
 public class PolicyFragmentInternal extends ListContentFragmentInternal {
 
- private static final String DATA_BUNDLE_KEY = "deleted";
+    private static final String DATA_BUNDLE_KEY = "deleted";
+    private LogFragmentInternal internal;
 
     public PolicyFragmentInternal(FragmentInterfaceWrapper fragment) {
         super(fragment);
     }
 
     ContextThemeWrapper mWrapper;
+
     @Override
     public Context getContext() {
         if (mWrapper != null)
@@ -81,15 +83,14 @@ public class PolicyFragmentInternal extends ListContentFragmentInternal {
 
         SQLiteDatabase db = new SuperuserDatabaseHelper(getActivity()).getReadableDatabase();
         try {
-            for (UidPolicy up: policies) {
+            for (UidPolicy up : policies) {
                 int last = 0;
                 ArrayList<LogEntry> logs = SuperuserDatabaseHelper.getLogs(db, up, 1);
                 if (logs.size() > 0)
                     last = logs.get(0).date;
                 addPolicy(up, last);
             }
-        }
-        finally {
+        } finally {
             db.close();
         }
     }
@@ -100,7 +101,6 @@ public class PolicyFragmentInternal extends ListContentFragmentInternal {
     }
 
     FragmentInterfaceWrapper mContent;
-
 
     @Override
     public void onCreate(Bundle savedInstanceState, View view) {
@@ -113,7 +113,7 @@ public class PolicyFragmentInternal extends ListContentFragmentInternal {
         load();
 
         if ("com.koushikdutta.superuser".equals(getContext().getPackageName())) {
-            ImageView watermark = (ImageView)view.findViewById(R.id.watermark);
+            ImageView watermark = (ImageView) view.findViewById(R.id.watermark);
             if (watermark != null)
                 watermark.setImageResource(R.drawable.clockwork512);
         }
@@ -122,7 +122,7 @@ public class PolicyFragmentInternal extends ListContentFragmentInternal {
     }
 
     public Date getLastDate(int last) {
-        return new Date((long)last * 1000);
+        return new Date((long) last * 1000);
     }
 
     void addPolicy(final UidPolicy up, final int last) {
@@ -138,10 +138,11 @@ public class PolicyFragmentInternal extends ListContentFragmentInternal {
 
                 setContent(this, up);
             };
+
             @Override
             public boolean onLongClick() {
-              showExtraActions(up, this);
-             return true;
+                showExtraActions(up, this);
+                return true;
             }
         });
 
@@ -152,60 +153,68 @@ public class PolicyFragmentInternal extends ListContentFragmentInternal {
             li.setDrawable(icon);
     }
 
-    public void showExtraActions(final UidPolicy up, final ListItem item){
-     AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+    public void showExtraActions(final UidPolicy up, final ListItem item) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(up.name);
         builder.setIcon(Helper.loadPackageIcon(getActivity(), up.packageName));
         final String permissionChange = (up.policy.equalsIgnoreCase(UidPolicy.ALLOW)) ?
-          getResources().getText(R.string.deny).toString() :
-           getResources().getText(R.string.allow).toString();
-        String[] items = new String[] {permissionChange, getString(R.string.revoke_permission),
-          getString(R.string.details)};
+                getResources().getText(R.string.deny).toString() :
+                getResources().getText(R.string.allow).toString();
+        String[] items = new String[] {
+                permissionChange, getString(R.string.revoke_permission),
+                getString(R.string.details)
+        };
         builder.setItems(items, new OnClickListener() {
             @SuppressLint("HandlerLeak")
-   @Override
+            @Override
             public void onClick(DialogInterface dialog, int which) {
                 switch (which) {
-                case 0:
-                    if(permissionChange.equalsIgnoreCase(
-                     getResources().getText(R.string.allow).toString())){
-                 up.setPolicy(UidPolicy.ALLOW);
-                    }
-                    else{
-                 up.setPolicy(UidPolicy.DENY);
-                    }
-                    SuDatabaseHelper.setPolicy(getActivity(), up);
-                    //update the adapters
-                    load();
-                    break;
-                case 1:
-                    final Handler handler = new Handler(){
-                 @Override
-                 public void handleMessage(Message msg) {
-                     // TODO Auto-generated method stub
-                     if(msg.getData().getBoolean(DATA_BUNDLE_KEY))
-                  removeItem(item);
-                     else
-                  showErrorDialog(up, R.string.db_delete_error);
-                 }
-                    };
-                    new Thread(){
-                 public void run(){
-                     final boolean done = SuDatabaseHelper.delete(getActivity(), up);
-                     Message msg = handler.obtainMessage();
-                     Bundle bundle = new Bundle();
-                     bundle.putBoolean(DATA_BUNDLE_KEY, done);
-                     msg.setData(bundle);
-                     handler.sendMessage(msg);
-                 }
-                    }.start();
-                    //dismiss the actions' dialog
-                    dialog.dismiss();
-                    break;
-                case 2:
-                    setContent(item, up);
-                    dialog.dismiss();
-                    break;
+                    case 0:
+                        if (permissionChange.equalsIgnoreCase(
+                                getResources().getText(R.string.allow).toString())) {
+                            up.setPolicy(UidPolicy.ALLOW);
+                            if (internal != null)
+                                internal.updateAtWill(up, true);
+                        }
+                        else {
+                            up.setPolicy(UidPolicy.DENY);
+                            if (internal != null)
+                                internal.updateAtWill(up, false);
+                        }
+                        SuDatabaseHelper.setPolicy(getActivity(), up);
+                        // update the adapters
+                        load();
+                        break;
+                    case 1:
+                        final Handler handler = new Handler() {
+                            @Override
+                            public void handleMessage(Message msg) {
+                                // TODO Auto-generated method stub
+                                if (msg.getData().getBoolean(DATA_BUNDLE_KEY)) {
+                                    removeItem(item);
+                                    load();
+                                }
+                                else
+                                    showErrorDialog(up, R.string.db_delete_error);
+                            }
+                        };
+                        new Thread() {
+                            public void run() {
+                                final boolean done = SuDatabaseHelper.delete(getActivity(), up);
+                                Message msg = handler.obtainMessage();
+                                Bundle bundle = new Bundle();
+                                bundle.putBoolean(DATA_BUNDLE_KEY, done);
+                                msg.setData(bundle);
+                                handler.sendMessage(msg);
+                            }
+                        }.start();
+                        // dismiss the actions' dialog
+                        dialog.dismiss();
+                        break;
+                    case 2:
+                        setContent(item, up);
+                        dialog.dismiss();
+                        break;
                 }
             }
         });
@@ -213,19 +222,19 @@ public class PolicyFragmentInternal extends ListContentFragmentInternal {
         dialog.show();
     }
 
-    private void showErrorDialog(UidPolicy policy, int resource){
-     AlertDialog.Builder builder = new AlertDialog.Builder(getActivity())
-       .setTitle(policy.name)
-          .setIcon(Helper.loadPackageIcon(getActivity(), policy.packageName))
-          .setMessage(getResources().getText(resource))
-          .setCancelable(true)
-          .setNeutralButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int id) {
-                 dialog.dismiss();
-                }
-            });
-     AlertDialog alert = builder.create();
-     alert.show();
+    private void showErrorDialog(UidPolicy policy, int resource) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity())
+                .setTitle(policy.name)
+                .setIcon(Helper.loadPackageIcon(getActivity(), policy.packageName))
+                .setMessage(getResources().getText(resource))
+                .setCancelable(true)
+                .setNeutralButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.dismiss();
+                    }
+                });
+        AlertDialog alert = builder.create();
+        alert.show();
     }
 
     public void onConfigurationChanged(Configuration newConfig) {
@@ -241,7 +250,9 @@ public class PolicyFragmentInternal extends ListContentFragmentInternal {
 
     FragmentInterfaceWrapper setContentNative(final ListItem li, final UidPolicy up) {
         LogNativeFragment l = createLogNativeFragment();
-        l.getInternal().setUidPolicy(up);
+        internal = l.getInternal();
+        internal.setParent(this);
+        internal.setUidPolicy(up);
         if (up != null) {
             Bundle args = new Bundle();
             args.putString("command", up.command);
@@ -249,15 +260,17 @@ public class PolicyFragmentInternal extends ListContentFragmentInternal {
             args.putInt("desiredUid", up.desiredUid);
             l.setArguments(args);
         }
-        l.getInternal().setListContentId(getFragment().getId());
+        internal.setListContentId(getFragment().getId());
         return l;
     }
 
     void setContent(final ListItem li, final UidPolicy up) {
         if (getActivity() instanceof FragmentActivity) {
             LogFragment l = new LogFragment();
-            l.getInternal().setUidPolicy(up);
-            l.getInternal().setListContentId(getFragment().getId());
+            internal = l.getInternal();
+            internal.setParent(this);
+            internal.setUidPolicy(up);
+            internal.setListContentId(getFragment().getId());
             mContent = l;
         }
         else {
@@ -267,14 +280,14 @@ public class PolicyFragmentInternal extends ListContentFragmentInternal {
         setContent(mContent, up == null, up == null ? getString(R.string.logs) : up.getName());
     }
 
-
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
- /* When you are in LogFragmentInternal screen and you rotate the device
-         * you are directed to the first screen (PolicyFragment).
-         * Then you will notice that the trash menu icon still exists.
-         * This is a bug because LogFragmentInternal's menu is loaded.
-         * So, clear any previously loaded menu before load this one.
+        /*
+         * When you are in LogFragmentInternal screen and you rotate the device
+         * you are directed to the first screen (PolicyFragment). Then you will
+         * notice that the trash menu icon still exists. This is a bug because
+         * LogFragmentInternal's menu is loaded. So, clear any previously loaded
+         * menu before load this one.
          */
         menu.clear();
 
@@ -308,5 +321,4 @@ public class PolicyFragmentInternal extends ListContentFragmentInternal {
             }
         });
     }
-
 }

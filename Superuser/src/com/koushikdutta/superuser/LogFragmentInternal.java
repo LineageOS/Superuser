@@ -19,6 +19,7 @@ package com.koushikdutta.superuser;
 import java.util.ArrayList;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.text.format.DateFormat;
@@ -28,6 +29,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MenuItem.OnMenuItemClickListener;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -42,17 +44,28 @@ import com.koushikdutta.widgets.FragmentInterfaceWrapper;
 import com.koushikdutta.widgets.ListItem;
 
 public class LogFragmentInternal extends BetterListFragmentInternal {
+
+    private CompoundButton permission;
+
     public LogFragmentInternal(FragmentInterfaceWrapper fragment) {
         super(fragment);
     }
 
     UidPolicy up;
+
     public LogFragmentInternal setUidPolicy(UidPolicy up) {
         this.up = up;
         return this;
     }
 
+    PolicyFragmentInternal parent = null;
+
+    public void setParent(PolicyFragmentInternal parent) {
+        this.parent = parent;
+    }
+
     int mListContentId;
+
     public void setListContentId(int id) {
         mListContentId = id;
     }
@@ -91,7 +104,8 @@ public class LogFragmentInternal extends BetterListFragmentInternal {
     protected void onCreate(Bundle savedInstanceState, View view) {
         super.onCreate(savedInstanceState, view);
 
-        LayoutInflater inflater = (LayoutInflater)getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(
+                Context.LAYOUT_INFLATER_SERVICE);
         getListView().addHeaderView(inflater.inflate(R.layout.policy_header, null));
 
         getFragment().setHasOptionsMenu(true);
@@ -112,18 +126,20 @@ public class LogFragmentInternal extends BetterListFragmentInternal {
         java.text.DateFormat day = DateFormat.getDateFormat(getActivity());
         java.text.DateFormat time = DateFormat.getTimeFormat(getActivity());
         if (up != null) {
-            ImageView icon = (ImageView)view.findViewById(R.id.image);
+            ImageView icon = (ImageView) view.findViewById(R.id.image);
             icon.setImageDrawable(Helper.loadPackageIcon(getActivity(), up.packageName));
-            TextView name = (TextView)view.findViewById(R.id.name);
+            TextView name = (TextView) view.findViewById(R.id.name);
             name.setText(up.name);
 
-            ((TextView)view.findViewById(R.id.uid_header)).setText(Integer.toString(up.desiredUid));
-            ((TextView)view.findViewById(R.id.command_header)).setText(TextUtils.isEmpty(up.command) ? getString(R.string.all_commands) : up.command);
+            ((TextView) view.findViewById(R.id.uid_header))
+                    .setText(Integer.toString(up.desiredUid));
+            ((TextView) view.findViewById(R.id.command_header)).setText(TextUtils
+                    .isEmpty(up.command) ? getString(R.string.all_commands) : up.command);
             String app = up.username;
             if (app == null || app.length() == 0)
                 app = String.valueOf(up.uid);
-            ((TextView)view.findViewById(R.id.app_header)).setText(app);
-            ((TextView)view.findViewById(R.id.package_header)).setText(up.packageName);
+            ((TextView) view.findViewById(R.id.app_header)).setText(app);
+            ((TextView) view.findViewById(R.id.package_header)).setText(up.packageName);
 
             getListView().setSelector(android.R.color.transparent);
 
@@ -135,7 +151,7 @@ public class LogFragmentInternal extends BetterListFragmentInternal {
             logs = SuperuserDatabaseHelper.getLogs(getActivity());
         }
 
-        for (LogEntry log: logs) {
+        for (LogEntry log : logs) {
             final String date = time.format(log.getDate());
             String title = date;
             String summary = getString(log.getActionResource());
@@ -147,14 +163,14 @@ public class LogFragmentInternal extends BetterListFragmentInternal {
                 public View getView(android.content.Context context, View convertView) {
                     View ret = super.getView(context, convertView);
                     if (up == null) {
-                        ((TextView)ret.findViewById(R.id.extra)).setText(date);
+                        ((TextView) ret.findViewById(R.id.extra)).setText(date);
                     }
                     return ret;
                 }
             });
         }
 
-        final CompoundButton logging = (CompoundButton)view.findViewById(R.id.logging);
+        final CompoundButton logging = (CompoundButton) view.findViewById(R.id.logging);
         if (up == null) {
             logging.setChecked(Settings.getLogging(getActivity()));
         }
@@ -174,7 +190,7 @@ public class LogFragmentInternal extends BetterListFragmentInternal {
             }
         });
 
-        final CompoundButton notification = (CompoundButton)view.findViewById(R.id.notification);
+        final CompoundButton notification = (CompoundButton) view.findViewById(R.id.notification);
         if (up == null) {
             view.findViewById(R.id.notification_container).setVisibility(View.GONE);
         }
@@ -192,5 +208,39 @@ public class LogFragmentInternal extends BetterListFragmentInternal {
                 }
             }
         });
+
+        permission = (CompoundButton) view.findViewById(R.id.permission);
+        if (up == null) {
+            view.findViewById(R.id.notification_container).setVisibility(View.GONE);
+        }
+        else {
+            if (up.getPolicyResource() == R.string.allow) {
+                permission.setChecked(true);
+            }
+            else if (up.getPolicyResource() == R.string.deny) {
+                permission.setChecked(false);
+            }
+        }
+        permission.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (up != null) {
+                    up.setPolicy(permission.isChecked() ? UidPolicy.ALLOW : UidPolicy.DENY);
+                    SuDatabaseHelper.setPolicy(getActivity(), up);
+                    // update the adapters
+                    parent.load();
+                }
+            }
+        });
+    }
+
+    public void updateAtWill(UidPolicy up, boolean permissionState) {
+        if (this.up != null) {
+            String currentAppName = this.up.getName();
+            if ((currentAppName != null) && (currentAppName.equals(up.getName()))) {
+                if (permission != null)
+                    permission.setChecked(permissionState);
+            }
+        }
     }
 }
