@@ -19,6 +19,7 @@ package com.koushikdutta.superuser;
 import java.util.ArrayList;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.text.format.DateFormat;
@@ -28,6 +29,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MenuItem.OnMenuItemClickListener;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -42,6 +44,9 @@ import com.koushikdutta.widgets.FragmentInterfaceWrapper;
 import com.koushikdutta.widgets.ListItem;
 
 public class LogFragmentInternal extends BetterListFragmentInternal {
+
+   private CompoundButton permission;
+
     public LogFragmentInternal(FragmentInterfaceWrapper fragment) {
         super(fragment);
     }
@@ -50,6 +55,11 @@ public class LogFragmentInternal extends BetterListFragmentInternal {
     public LogFragmentInternal setUidPolicy(UidPolicy up) {
         this.up = up;
         return this;
+    }
+
+    PolicyFragmentInternal parent = null;
+    public void setParent(PolicyFragmentInternal parent){
+	this.parent = parent;
     }
 
     int mListContentId;
@@ -192,5 +202,43 @@ public class LogFragmentInternal extends BetterListFragmentInternal {
                 }
             }
         });
+
+        permission = (CompoundButton)view.findViewById(R.id.permission);
+        if (up == null) {
+            view.findViewById(R.id.notification_container).setVisibility(View.GONE);
+        }
+        else {
+         if(up.getPolicyResource() == R.string.allow){
+          permission.setChecked(true);
+         }
+         else if(up.getPolicyResource() == R.string.deny){
+          permission.setChecked(false);
+         }
+        }
+        permission.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v){
+         if (up != null) {
+             up.setPolicy(permission.isChecked() ? UidPolicy.ALLOW : UidPolicy.DENY);
+             SuDatabaseHelper.setPolicy(getActivity(), up);
+             //update the adapters
+             /*
+              * TODO I should find a better way but this is ok
+              * for the moment!
+              */
+             parent.load();
+         }
+            }
+        });
+    }
+
+    public void updateAtWill(UidPolicy up, boolean permissionState){
+     if (this.up != null){
+      String currentAppName = this.up.getName();
+      if((currentAppName != null) && (currentAppName.equals(up.getName()))){
+       if(permission != null)
+        permission.setChecked(permissionState);
+      }
+     }
     }
 }
