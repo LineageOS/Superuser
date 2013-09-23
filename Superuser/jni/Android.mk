@@ -4,7 +4,7 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := su
 LOCAL_FORCE_STATIC_EXECUTABLE := true
-LOCAL_STATIC_LIBRARIES := sqlite3 libcutils libc
+LOCAL_STATIC_LIBRARIES := sqlite3 libcutils libc liblog
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/sqlite3
 LOCAL_SRC_FILES := su/su.c su/activity.c su/db.c su/utils.c su/daemon.c
 include $(BUILD_EXECUTABLE)
