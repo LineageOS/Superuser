@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5afe65bd_0e69ef8b",
+        "filename": "Superuser/src/com/koushikdutta/superuser/MainActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 198,
+      "author": {
+        "id": 6765
+      },
+      "writtenOn": "2013-09-23T00:11:59Z",
+      "side": 1,
+      "message": "These more specific exception catchers are redundant, the same code gets executed regardless.",
+      "revId": "a327409f0e817303b0ca5f2f197e724b1a5a9da3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5afe65bd_2e6cab9b",
+        "filename": "Superuser/src/com/koushikdutta/superuser/SuCheckerReceiver.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 6765
+      },
+      "writtenOn": "2013-09-23T00:11:59Z",
+      "side": 1,
+      "message": "These more specific exception handlers are redundant when you ignore the exception that was raised and always do the same thing regardless.",
+      "revId": "a327409f0e817303b0ca5f2f197e724b1a5a9da3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
