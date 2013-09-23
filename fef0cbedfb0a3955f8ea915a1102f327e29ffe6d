@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5afe65bd_ee2b3332",
+        "filename": "Superuser/src/com/koushikdutta/superuser/MultitaskSuRequestActivity.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 338,
+      "author": {
+        "id": 6765
+      },
+      "writtenOn": "2013-09-23T00:59:26Z",
+      "side": 1,
+      "message": "Could remove these lines entirely as they are not used.",
+      "revId": "fef0cbedfb0a3955f8ea915a1102f327e29ffe6d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5afe65bd_ce3077a1",
+        "filename": "Superuser/src/com/koushikdutta/superuser/util/StreamUtility.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 6765
+      },
+      "writtenOn": "2013-09-23T00:59:26Z",
+      "side": 1,
+      "message": "May as well remove this.",
+      "revId": "fef0cbedfb0a3955f8ea915a1102f327e29ffe6d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
