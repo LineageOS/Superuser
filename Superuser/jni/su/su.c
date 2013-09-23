@@ -81,50 +81,6 @@ int fork_zero_fucks() {
     }
 }
 
-void exec_log(char *priority, char* logline) {
-  int pid;
-  if ((pid = fork()) == 0) {
-      int null = open("/dev/null", O_WRONLY | O_CLOEXEC);
-      dup2(null, STDIN_FILENO);
-      dup2(null, STDOUT_FILENO);
-      dup2(null, STDERR_FILENO);
-      execl("/system/bin/log", "/system/bin/log", "-p", priority, "-t", LOG_TAG, logline, NULL);
-      _exit(0);
-  }
-  int status;
-  waitpid(pid, &status, 0);
-}
-
-void exec_loge(const char* fmt, ...) {
-    va_list args;
-
-    char logline[PATH_MAX];
-    va_start(args, fmt);
-    vsnprintf(logline, PATH_MAX, fmt, args);
-    va_end(args);
-    exec_log("e", logline);
-}
-
-void exec_logw(const char* fmt, ...) {
-    va_list args;
-
-    char logline[PATH_MAX];
-    va_start(args, fmt);
-    vsnprintf(logline, PATH_MAX, fmt, args);
-    va_end(args);
-    exec_log("w", logline);
-}
-
-void exec_logd(const char* fmt, ...) {
-    va_list args;
-
-    char logline[PATH_MAX];
-    va_start(args, fmt);
-    vsnprintf(logline, PATH_MAX, fmt, args);
-    va_end(args);
-    exec_log("d", logline);
-}
-
 static int from_init(struct su_initiator *from) {
     char path[PATH_MAX], exe[PATH_MAX];
     char args[4096], *argv0, *argv_rest;
@@ -427,7 +383,7 @@ do {                                        \
 static int socket_receive_result(int fd, char *result, ssize_t result_len) {
     ssize_t len;
 
-    LOGD("waiting for user");
+    ALOGV("waiting for user");
     len = read(fd, result, result_len-1);
     if (len < 0) {
         PLOGE("read(result)");
@@ -474,7 +430,7 @@ static __attribute__ ((noreturn)) void deny(struct su_context *ctx) {
     if (send_to_app)
         send_result(ctx, DENY);
 
-    LOGW("request rejected (%u->%u %s)", ctx->from.uid, ctx->to.uid, cmd);
+    ALOGW("request rejected (%u->%u %s)", ctx->from.uid, ctx->to.uid, cmd);
     fprintf(stderr, "%s\n", strerror(EACCES));
     exit(EXIT_FAILURE);
 }
@@ -537,7 +493,7 @@ static __attribute__ ((noreturn)) void allow(struct su_context *ctx) {
     (argc + (arg) < ctx->to.argc) ? " " : "",                    \
     (argc + (arg) < ctx->to.argc) ? ctx->to.argv[argc + (arg)] : ""
 
-    LOGD("%u %s executing %u %s using binary %s : %s%s%s%s%s%s%s%s%s%s%s%s%s%s",
+    ALOGD("%u %s executing %u %s using binary %s : %s%s%s%s%s%s%s%s%s%s%s%s%s%s",
             ctx->from.uid, ctx->from.bin,
             ctx->to.uid, get_command(&ctx->to), binary,
             arg0, PARG(0), PARG(1), PARG(2), PARG(3), PARG(4), PARG(5),
@@ -574,7 +530,7 @@ int access_disabled(const struct su_initiator *from) {
         free(data);
         /* only allow su on debuggable builds */
         if (strcmp("1", debuggable) != 0) {
-            LOGE("Root access is disabled on non-debug builds");
+            ALOGE("Root access is disabled on non-debug builds");
             return 1;
         }
 
@@ -593,7 +549,7 @@ int access_disabled(const struct su_initiator *from) {
         if (strcmp("eng", build_type) != 0 &&
                 from->uid != AID_SHELL && from->uid != AID_ROOT &&
                 (atoi(enabled) & CM_ROOT_ACCESS_APPS_ONLY) != CM_ROOT_ACCESS_APPS_ONLY ) {
-            LOGE("Apps root access is disabled by system setting - "
+            ALOGE("Apps root access is disabled by system setting - "
                  "enable it under settings -> developer options");
             return 1;
         }
@@ -601,8 +557,8 @@ int access_disabled(const struct su_initiator *from) {
         /* disallow su in a shell if appropriate */
         if (from->uid == AID_SHELL &&
                 (atoi(enabled) & CM_ROOT_ACCESS_ADB_ONLY) != CM_ROOT_ACCESS_ADB_ONLY ) {
-            LOGE("Shell root access is disabled by a system setting - "
-                 "enable it under settings -> developer options");
+            ALOGE("Shell root access is disabled by a system setting - "
+                  "enable it under settings -> developer options");
             return 1;
         }
 
@@ -629,7 +585,7 @@ int main(int argc, char *argv[]) {
     // or this is api 18 and adb shell (/data is not readable even as root)
     if ((geteuid() != AID_ROOT && getuid() != AID_ROOT) || (is_api_18() && getuid() == AID_SHELL)) {
         // attempt to connect to daemon...
-        LOGD("starting daemon client %d %d", getuid(), geteuid());
+        ALOGD("starting daemon client %d %d", getuid(), geteuid());
         return connect_daemon(argc, argv);
     }
 
@@ -677,7 +633,7 @@ int main(int argc, char *argv[]) {
      */
     setenv("LD_LIBRARY_PATH", "/vendor/lib:/system/lib", 0);
 
-    LOGD("su invoked.");
+    ALOGD("su invoked.");
 
     struct su_context ctx = {
         .from = {
@@ -781,7 +737,7 @@ int main(int argc, char *argv[]) {
             errno = 0;
             ctx.to.uid = strtoul(argv[optind], &endptr, 10);
             if (errno || *endptr) {
-                LOGE("Unknown id: %s\n", argv[optind]);
+                ALOGE("Unknown id: %s\n", argv[optind]);
                 fprintf(stderr, "Unknown id: %s\n", argv[optind]);
                 exit(EXIT_FAILURE);
             }
@@ -807,7 +763,7 @@ int main(int argc, char *argv[]) {
 
     // the latter two are necessary for stock ROMs like note 2 which do dumb things with su, or crash otherwise
     if (ctx.from.uid == AID_ROOT) {
-        LOGD("Allowing root/system/radio.");
+        ALOGD("Allowing root/system/radio.");
         allow(&ctx);
     }
 
@@ -822,7 +778,7 @@ int main(int argc, char *argv[]) {
 
     // odd perms on superuser data dir
     if (st.st_gid != st.st_uid) {
-        LOGE("Bad uid/gid %d/%d for Superuser Requestor application",
+        ALOGE("Bad uid/gid %d/%d for Superuser Requestor application",
                 (int)st.st_uid, (int)st.st_gid);
         deny(&ctx);
     }
@@ -835,13 +791,13 @@ int main(int argc, char *argv[]) {
 
     // check if superuser is disabled completely
     if (access_disabled(&ctx.from)) {
-        LOGD("access_disabled");
+        ALOGD("access_disabled");
         deny(&ctx);
     }
 
     // autogrant shell at this point
     if (ctx.from.uid == AID_SHELL) {
-        LOGD("Allowing shell.");
+        ALOGD("Allowing shell.");
         allow(&ctx);
     }
 
@@ -876,16 +832,16 @@ int main(int argc, char *argv[]) {
         case INTERACTIVE:
             break;
         case ALLOW:
-            LOGD("db allowed");
+            ALOGD("db allowed");
             allow(&ctx);    /* never returns */
         case DENY:
         default:
-            LOGD("db denied");
+            ALOGD("db denied");
             deny(&ctx);        /* never returns too */
     }
 
     socket_serv_fd = socket_create_temp(ctx.sock_path, sizeof(ctx.sock_path));
-    LOGD(ctx.sock_path);
+    ALOGV(ctx.sock_path);
     if (socket_serv_fd < 0) {
         deny(&ctx);
     }
@@ -922,7 +878,7 @@ int main(int argc, char *argv[]) {
 
 #define SOCKET_RESPONSE    "socket:"
     if (strncmp(result, SOCKET_RESPONSE, sizeof(SOCKET_RESPONSE) - 1))
-        LOGW("SECURITY RISK: Requestor still receives credentials in intent");
+        ALOGW("SECURITY RISK: Requestor still receives credentials in intent");
     else
         result += sizeof(SOCKET_RESPONSE) - 1;
 
@@ -931,7 +887,7 @@ int main(int argc, char *argv[]) {
     } else if (!strcmp(result, "ALLOW")) {
         allow(&ctx);
     } else {
-        LOGE("unknown response from Superuser Requestor: %s", result);
+        ALOGE("unknown response from Superuser Requestor: %s", result);
         deny(&ctx);
     }
 }

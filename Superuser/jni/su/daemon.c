@@ -51,7 +51,7 @@ static int read_int(int fd) {
     int val;
     int len = read(fd, &val, sizeof(int));
     if (len != sizeof(int)) {
-        LOGE("unable to read int");
+        ALOGE("unable to read int");
         exit(-1);
     }
     return val;
@@ -68,18 +68,18 @@ static void write_int(int fd, int val) {
 static char* read_string(int fd) {
     int len = read_int(fd);
     if (len > PATH_MAX || len < 0) {
-        LOGE("invalid string length %d", len);
+        ALOGE("invalid string length %d", len);
         exit(-1);
     }
     char* val = malloc(sizeof(char) * (len + 1));
     if (val == NULL) {
-        LOGE("unable to malloc string");
+        ALOGE("unable to malloc string");
         exit(-1);
     }
     val[len] = '\0';
     int amount = read(fd, val, len);
     if (amount != len) {
-        LOGE("unable to read string");
+        ALOGE("unable to read string");
         exit(-1);
     }
     return val;
@@ -176,7 +176,7 @@ static void pump_async(int input, int output) {
     pthread_t writer;
     int* files = (int*)malloc(sizeof(int) * 2);
     if (files == NULL) {
-        LOGE("unable to pump_async");
+        ALOGE("unable to pump_async");
         exit(-1);
     }
     files[0] = input;
@@ -187,19 +187,19 @@ static void pump_async(int input, int output) {
 static int daemon_accept(int fd) {
     is_daemon = 1;
     int pid = read_int(fd);
-    LOGD("remote pid: %d", pid);
+    ALOGV("remote pid: %d", pid);
     int atty = read_int(fd);
-    LOGD("remote atty: %d", atty);
+    ALOGV("remote atty: %d", atty);
     daemon_from_uid = read_int(fd);
-    LOGD("remote uid: %d", daemon_from_uid);
+    ALOGV("remote uid: %d", daemon_from_uid);
     daemon_from_pid = read_int(fd);
-    LOGD("remote req pid: %d", daemon_from_pid);
+    ALOGV("remote req pid: %d", daemon_from_pid);
 
     struct ucred credentials;
     int ucred_length = sizeof(struct ucred);
     /* fill in the user data structure */
     if(getsockopt(fd, SOL_SOCKET, SO_PEERCRED, &credentials, &ucred_length)) {
-        LOGE("could obtain credentials from unix domain socket");
+        ALOGE("could obtain credentials from unix domain socket");
         exit(-1);
     }
     // if the credentials on the other side of the wire are NOT root,
@@ -213,10 +213,10 @@ static int daemon_accept(int fd) {
     int mount_storage = read_int(fd);
     int argc = read_int(fd);
     if (argc < 0 || argc > 512) {
-        LOGE("unable to allocate args: %d", argc);
+        ALOGE("unable to allocate args: %d", argc);
         exit(-1);
     }
-    LOGD("remote args: %d", argc);
+    ALOGV("remote args: %d", argc);
     char** argv = (char**)malloc(sizeof(char*) * (argc + 1));
     argv[argc] = NULL;
     int i;
@@ -267,7 +267,7 @@ static int daemon_accept(int fd) {
             close(ptm);
             exit(-1);
         }
-        LOGD("devname: %s", devname);
+        ALOGV("devname: %s", devname);
     }
 
     int outfd = open(outfile, O_WRONLY);
@@ -352,7 +352,7 @@ static int daemon_accept(int fd) {
     // wait for the child to exit, and send the exit code
     // across the wire.
     int status;
-    LOGD("waiting for child exit");
+    ALOGV("waiting for child exit");
     if (waitpid(child, &status, 0) > 0) {
         code = WEXITSTATUS(status);
     }
@@ -363,7 +363,7 @@ static int daemon_accept(int fd) {
 done:
     write(fd, &code, sizeof(int));
     close(fd);
-    LOGD("child exited");
+    ALOGV("child exited");
     return code;
 }
 
@@ -422,7 +422,7 @@ int run_daemon() {
         }
     }
 
-    LOGE("daemon exiting");
+    ALOGE("daemon exiting");
 err:
     close(fd);
     return -1;
@@ -461,7 +461,7 @@ int connect_daemon(int argc, char *argv[]) {
         exit(-1);
     }
 
-    LOGD("connecting client %d", getpid());
+    ALOGV("connecting client %d", getpid());
 
     int mount_storage = getenv("MOUNT_EMULATED_STORAGE") != NULL;
 
@@ -504,6 +504,6 @@ int connect_daemon(int argc, char *argv[]) {
     pump(outfd, STDOUT_FILENO);
 
     int code = read_int(socketfd);
-    LOGD("client exited %d", code);
+    ALOGV("client exited %d", code);
     return code;
 }

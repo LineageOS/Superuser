@@ -23,6 +23,8 @@
 #endif
 #define LOG_TAG "su"
 
+#include <cutils/log.h>
+
 #ifndef AID_SHELL
 #define AID_SHELL (get_shell_uid())
 #endif
@@ -185,30 +187,9 @@ int connect_daemon(int argc, char *argv[]);
 // deadbeat dad fork.
 int fork_zero_fucks();
 
-// fallback to using /system/bin/log.
-// can't use liblog.so because this is a static binary.
-#ifndef LOGE
-#define LOGE exec_loge
-#endif
-#ifndef LOGD
-#define LOGD exec_logd
-#endif
-#ifndef LOGW
-#define LOGW exec_logw
-#endif
-
-#if 0
-#undef LOGE
-#define LOGE(fmt,args...) fprintf(stderr, fmt, ##args)
-#undef LOGD
-#define LOGD(fmt,args...) fprintf(stderr, fmt, ##args)
-#undef LOGW
-#define LOGW(fmt,args...) fprintf(stderr, fmt, ##args)
-#endif
-
 #include <errno.h>
 #include <string.h>
-#define PLOGE(fmt,args...) LOGE(fmt " failed with %d: %s", ##args, errno, strerror(errno))
-#define PLOGEV(fmt,err,args...) LOGE(fmt " failed with %d: %s", ##args, err, strerror(err))
+#define PLOGE(fmt,args...) ALOGE(fmt " failed with %d: %s", ##args, errno, strerror(errno))
+#define PLOGEV(fmt,err,args...) ALOGE(fmt " failed with %d: %s", ##args, err, strerror(err))
 
 #endif
