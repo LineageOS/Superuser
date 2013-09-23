@@ -84,7 +84,7 @@ policy_t database_check(struct su_context *ctx) {
     snprintf(query, sizeof(query), "select policy, until, command from uid_policy where uid=%d", ctx->from.uid);
     int ret = sqlite3_open_v2(ctx->user.database_path, &db, SQLITE_OPEN_READONLY, NULL);
     if (ret) {
-        LOGE("sqlite3 open failure: %d", ret);
+        ALOGE("sqlite3 open failure: %d", ret);
         sqlite3_close(db);
         return INTERACTIVE;
     }
@@ -97,7 +97,7 @@ policy_t database_check(struct su_context *ctx) {
     ret = sqlite3_exec(db, query, database_callback, &data, &err);
     sqlite3_close(db);
     if (err != NULL) {
-        LOGE("sqlite3_exec: %s", err);
+        ALOGE("sqlite3_exec: %s", err);
         return DENY;
     }
 
