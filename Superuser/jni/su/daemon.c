@@ -15,6 +15,8 @@
 ** limitations under the License.
 */
 
+#define _GNU_SOURCE /* for unshare() */
+
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <sys/un.h>
@@ -31,6 +33,7 @@
 #include <pwd.h>
 #include <sys/mount.h>
 #include <sys/stat.h>
+#include <sched.h>
 #include <stdarg.h>
 #include <sys/types.h>
 #include <pthread.h>
@@ -349,6 +352,20 @@ int run_daemon() {
     unlink(sun.sun_path);
     unlink(REQUESTOR_DAEMON_PATH);
 
+    /*
+     * Start a new mount name space. This mainly targets the emulated storage
+     * mount below, but also ensures that e.g. an app mounting /system r/w doesn't
+     * cause non-root apps to access /system for writing.
+     */
+    if (unshare(CLONE_NEWNS) < 0) {
+        PLOGE("unshare");
+        goto err;
+    }
+
+    if (mount("rootfs", "/", NULL, MS_SLAVE | MS_REC, NULL) < 0) {
+        PLOGE("mount rootfs as slave");
+        goto err;
+    }
     /*
      * Mount emulated storage, if present. Normally that's done by zygote,
      * but as we're started via init, we have to do it ourselves.
