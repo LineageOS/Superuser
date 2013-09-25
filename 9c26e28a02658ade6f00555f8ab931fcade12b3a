@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "3afb71cf_8da969e2",
+        "filename": "Superuser/src/com/koushikdutta/superuser/MultitaskSuRequestActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 292,
+      "author": {
+        "id": 7001
+      },
+      "writtenOn": "2013-09-25T20:30:19Z",
+      "side": 1,
+      "message": "Mmm, this is the first time I saw that I have used a spare pair of brakcets! In order to keep the philoshopy of the initial code the same I could fix it by removing the spare brackets but I like your way better.",
+      "parentUuid": "3afb71cf_2d1dd566",
+      "revId": "9c26e28a02658ade6f00555f8ab931fcade12b3a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5afe65bd_f92bff31",
         "filename": "Superuser/src/com/koushikdutta/superuser/SuReceiver.java",
         "patchSetId": 4
@@ -90,6 +108,24 @@
     },
     {
       "key": {
+        "uuid": "3afb71cf_4d3ed1b9",
+        "filename": "Superuser/src/com/koushikdutta/superuser/SuReceiver.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 7001
+      },
+      "writtenOn": "2013-09-25T20:30:19Z",
+      "side": 1,
+      "message": "I believe that in newer APIs it makes the notification to expand and for older APIs Google has some backwards compatibilty to create a normal notification.",
+      "parentUuid": "3afb71cf_4d10114f",
+      "revId": "9c26e28a02658ade6f00555f8ab931fcade12b3a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3afb71cf_0d1a196f",
         "filename": "Superuser/src/com/koushikdutta/superuser/util/StreamUtility.java",
         "patchSetId": 4
@@ -101,6 +137,24 @@
       "writtenOn": "2013-09-25T20:05:42Z",
       "side": 1,
       "message": "I think you can remove this instead of commenting it out.",
+      "revId": "9c26e28a02658ade6f00555f8ab931fcade12b3a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3afb71cf_6d418d39",
+        "filename": "Superuser/src/com/koushikdutta/superuser/util/StreamUtility.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 7001
+      },
+      "writtenOn": "2013-09-25T20:30:19Z",
+      "side": 1,
+      "message": "Some variable declarations existed from the beginning. I commented them out just not to allocate memory. I wanted them to be here for the initial developer to remove those lines if he wants to. I think that maybe he wants to remember something by leaving these lines at code. I can fix this for sure, but I don\u0027t know if community wants to.",
+      "parentUuid": "3afb71cf_0d1a196f",
       "revId": "9c26e28a02658ade6f00555f8ab931fcade12b3a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
