@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "3afb71cf_2d1dd566",
+        "filename": "Superuser/src/com/koushikdutta/superuser/MultitaskSuRequestActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 292,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-09-25T20:05:42Z",
+      "side": 1,
+      "message": "Indention is off here.\n\nI think there\u0027s a better way to fix this, though:\n\nprivate final static HashMap\u003cString, Integer\u003e SU_PROTOCOL_VALUE_MAX \u003d new HashMap\u003cString, Integer\u003e();\nstatic {\n    SU_PROTOCOL_VALUE_MAX.put(\"command\", 2048);\n}",
+      "revId": "9c26e28a02658ade6f00555f8ab931fcade12b3a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5afe65bd_f92bff31",
         "filename": "Superuser/src/com/koushikdutta/superuser/SuReceiver.java",
         "patchSetId": 4
@@ -49,6 +66,41 @@
       "side": 1,
       "message": "Done",
       "parentUuid": "5afe65bd_f92bff31",
+      "revId": "9c26e28a02658ade6f00555f8ab931fcade12b3a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3afb71cf_4d10114f",
+        "filename": "Superuser/src/com/koushikdutta/superuser/SuReceiver.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-09-25T20:05:42Z",
+      "side": 1,
+      "message": "He probably means that Notification.Builder.build() is supported for API level \u003e\u003d 16 only. This should not be an issue with NotificationCompat.Builder, though.",
+      "parentUuid": "3afb71cf_e4feba04",
+      "revId": "9c26e28a02658ade6f00555f8ab931fcade12b3a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3afb71cf_0d1a196f",
+        "filename": "Superuser/src/com/koushikdutta/superuser/util/StreamUtility.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-09-25T20:05:42Z",
+      "side": 1,
+      "message": "I think you can remove this instead of commenting it out.",
       "revId": "9c26e28a02658ade6f00555f8ab931fcade12b3a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
