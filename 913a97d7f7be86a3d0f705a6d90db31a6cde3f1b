@@ -54,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "3afb71cf_4dda517a",
+        "filename": "Superuser/src/com/koushikdutta/superuser/MainActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 206,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-09-25T20:49:48Z",
+      "side": 1,
+      "message": "With Log.e(String, String, Throwable) you already see the exception message _additionally_ to the log message. Just try it ;)\n\nThe exception message itself should never be shown to the user, as this gets you into localization issues.",
+      "parentUuid": "3afb71cf_adf2e504",
+      "revId": "913a97d7f7be86a3d0f705a6d90db31a6cde3f1b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3afb71cf_0d31f9ec",
         "filename": "Superuser/src/com/koushikdutta/superuser/MainActivity.java",
         "patchSetId": 5
@@ -100,6 +118,24 @@
       "side": 1,
       "message": "The repeating block of code should be in a method!",
       "parentUuid": "3afb71cf_ed4c5d78",
+      "revId": "913a97d7f7be86a3d0f705a6d90db31a6cde3f1b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3afb71cf_6ddd0d70",
+        "filename": "Superuser/src/com/koushikdutta/superuser/SuCheckerReceiver.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-09-25T20:49:48Z",
+      "side": 1,
+      "message": "Still, as long as Exception is catched, it makes no sense to catch the subclasses separately and doing the _exactly_ same thing.",
+      "parentUuid": "3afb71cf_cded2127",
       "revId": "913a97d7f7be86a3d0f705a6d90db31a6cde3f1b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
