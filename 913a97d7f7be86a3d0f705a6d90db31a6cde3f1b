@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3afb71cf_6d3aadcf",
+        "filename": "Superuser/src/com/koushikdutta/superuser/MainActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 195,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-09-25T20:15:41Z",
+      "side": 1,
+      "message": "Formatting issues:\n- indention is off\n- should wrap to 100 chars\n- spaces missing before and after +",
+      "revId": "913a97d7f7be86a3d0f705a6d90db31a6cde3f1b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3afb71cf_2d34b5dc",
+        "filename": "Superuser/src/com/koushikdutta/superuser/MainActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 206,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-09-25T20:15:41Z",
+      "side": 1,
+      "message": "AFAICT those can be collapses into the catch block below. The exception message will be printed out to logcat anyway.",
+      "revId": "913a97d7f7be86a3d0f705a6d90db31a6cde3f1b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3afb71cf_0d31f9ec",
+        "filename": "Superuser/src/com/koushikdutta/superuser/MainActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 312,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-09-25T20:15:41Z",
+      "side": 1,
+      "message": "As above.",
+      "revId": "913a97d7f7be86a3d0f705a6d90db31a6cde3f1b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3afb71cf_ed4c5d78",
+        "filename": "Superuser/src/com/koushikdutta/superuser/SuCheckerReceiver.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-09-25T20:15:41Z",
+      "side": 1,
+      "message": "- Indention is off\n- spaces missing (before {, after catch)\n- The additional catch blocks provide no value",
+      "revId": "913a97d7f7be86a3d0f705a6d90db31a6cde3f1b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3afb71cf_cd51a110",
+        "filename": "Superuser/src/com/koushikdutta/superuser/util/SuHelper.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-09-25T20:15:41Z",
+      "side": 1,
+      "message": "Indent by additional 8 spaces",
+      "revId": "913a97d7f7be86a3d0f705a6d90db31a6cde3f1b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3afb71cf_ad566504",
+        "filename": "Superuser/src/com/koushikdutta/superuser/util/SuHelper.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-09-25T20:15:41Z",
+      "side": 1,
+      "message": "Spaces missing before and after +",
+      "revId": "913a97d7f7be86a3d0f705a6d90db31a6cde3f1b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
