@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "3afb71cf_0de45939",
+        "filename": "Superuser/src/com/koushikdutta/superuser/MultitaskSuRequestActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 292,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-09-25T20:51:23Z",
+      "side": 1,
+      "message": "You can\u0027t just remove them, as they\u0027re the brackets around the (anonymous) constructor.",
+      "parentUuid": "3afb71cf_8da969e2",
+      "revId": "9c26e28a02658ade6f00555f8ab931fcade12b3a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5afe65bd_f92bff31",
         "filename": "Superuser/src/com/koushikdutta/superuser/SuReceiver.java",
         "patchSetId": 4
@@ -155,6 +173,24 @@
       "side": 1,
       "message": "Some variable declarations existed from the beginning. I commented them out just not to allocate memory. I wanted them to be here for the initial developer to remove those lines if he wants to. I think that maybe he wants to remember something by leaving these lines at code. I can fix this for sure, but I don\u0027t know if community wants to.",
       "parentUuid": "3afb71cf_0d1a196f",
+      "revId": "9c26e28a02658ade6f00555f8ab931fcade12b3a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3afb71cf_edcfbdb1",
+        "filename": "Superuser/src/com/koushikdutta/superuser/util/StreamUtility.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-09-25T20:51:23Z",
+      "side": 1,
+      "message": "Please kill it. It\u0027s easy to get it back from git history if needed.",
+      "parentUuid": "3afb71cf_6d418d39",
       "revId": "9c26e28a02658ade6f00555f8ab931fcade12b3a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
