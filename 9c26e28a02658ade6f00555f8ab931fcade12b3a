@@ -16,6 +16,24 @@
       "revId": "9c26e28a02658ade6f00555f8ab931fcade12b3a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3afb71cf_e4feba04",
+        "filename": "Superuser/src/com/koushikdutta/superuser/SuReceiver.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 7001
+      },
+      "writtenOn": "2013-09-25T02:20:47Z",
+      "side": 1,
+      "message": "I tested the source at my phone with Android 2.2.1. It is working fine. I mean notification is shown without problem. What is the \"break\" that you mention here?",
+      "parentUuid": "5afe65bd_f92bff31",
+      "revId": "9c26e28a02658ade6f00555f8ab931fcade12b3a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
