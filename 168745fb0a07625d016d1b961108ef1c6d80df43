@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da20952f_d95dd3ed",
+        "filename": "Superuser/res/values-lt/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 308
+      },
+      "writtenOn": "2013-11-14T12:46:08Z",
+      "side": 1,
+      "message": "pasirinkim?",
+      "revId": "168745fb0a07625d016d1b961108ef1c6d80df43",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da20952f_f96217ad",
+        "filename": "Superuser/res/values-lt/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 308
+      },
+      "writtenOn": "2013-11-14T12:46:08Z",
+      "side": 1,
+      "message": "rodomas",
+      "revId": "168745fb0a07625d016d1b961108ef1c6d80df43",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da20952f_99575bca",
+        "filename": "Superuser/res/values-lt/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 308
+      },
+      "writtenOn": "2013-11-14T12:46:08Z",
+      "side": 1,
+      "message": "?veskite",
+      "revId": "168745fb0a07625d016d1b961108ef1c6d80df43",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da20952f_b95c9fee",
+        "filename": "Superuser/res/values-lt/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 308
+      },
+      "writtenOn": "2013-11-14T12:46:08Z",
+      "side": 1,
+      "message": "Superuser teis?s suteiktos %s",
+      "revId": "168745fb0a07625d016d1b961108ef1c6d80df43",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da20952f_5972237e",
+        "filename": "Superuser/res/values-lt/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 308
+      },
+      "writtenOn": "2013-11-14T12:46:08Z",
+      "side": 1,
+      "message": "Superuser teis?s nesuteiktos %s",
+      "revId": "168745fb0a07625d016d1b961108ef1c6d80df43",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da20952f_196cab9b",
+        "filename": "Superuser/res/values-lt/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 308
+      },
+      "writtenOn": "2013-11-14T12:46:08Z",
+      "side": 1,
+      "message": "nedeklaruotas",
+      "revId": "168745fb0a07625d016d1b961108ef1c6d80df43",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
