@@ -71,8 +71,6 @@
 #define REQUESTOR_DATABASE_PATH REQUESTOR "/databases/su.sqlite"
 #define REQUESTOR_MULTIUSER_MODE REQUESTOR_FILES_PATH "/multiuser_mode"
 
-#define DEFAULT_SHELL "/system/bin/sh"
-
 #define xstr(a) str(a)
 #define str(a) #a
 
@@ -155,6 +153,7 @@ extern policy_t database_check(struct su_context *ctx);
 extern void set_identity(unsigned int uid);
 extern int send_request(struct su_context *ctx);
 extern int send_result(struct su_context *ctx, policy_t policy);
+char * getshell();
 
 static inline char *get_command(const struct su_request *to)
 {
@@ -165,7 +164,8 @@ static inline char *get_command(const struct su_request *to)
   char* ret = to->argv[to->optind];
   if (ret)
     return ret;
-  return DEFAULT_SHELL;
+  char* shell = getshell();
+  return shell;
 }
 
 int run_daemon();
