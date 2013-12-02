@@ -155,6 +155,7 @@ extern policy_t database_check(struct su_context *ctx);
 extern void set_identity(unsigned int uid);
 extern int send_request(struct su_context *ctx);
 extern int send_result(struct su_context *ctx, policy_t policy);
+char * get_shell();
 
 static inline char *get_command(const struct su_request *to)
 {
@@ -165,7 +166,7 @@ static inline char *get_command(const struct su_request *to)
   char* ret = to->argv[to->optind];
   if (ret)
     return ret;
-  return DEFAULT_SHELL;
+  return get_shell();
 }
 
 int run_daemon();
