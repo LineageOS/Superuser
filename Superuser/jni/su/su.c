@@ -33,6 +33,7 @@
 #include <sys/stat.h>
 #include <stdarg.h>
 #include <sys/types.h>
+#include <cutils/properties.h>
 
 #include "su.h"
 #include "utils.h"
@@ -243,7 +244,7 @@ static void populate_environment(const struct su_context *ctx) {
         if (ctx->to.shell)
             setenv("SHELL", ctx->to.shell, 1);
         else
-            setenv("SHELL", DEFAULT_SHELL, 1);
+            setenv("SHELL", get_shell(), 1);
         if (ctx->to.login || ctx->to.uid) {
             setenv("USER", pw->pw_name, 1);
             setenv("LOGNAME", pw->pw_name, 1);
@@ -434,11 +435,11 @@ static void usage(int status) {
     "  -, -l, --login                pretend the shell to be a login shell\n"
     "  -m, -p,\n"
     "  --preserve-environment        do not change environment variables\n"
-    "  -s, --shell SHELL             use SHELL instead of the default " DEFAULT_SHELL "\n"
+    "  -s, --shell SHELL             use SHELL instead of the default %s\n"
     "  -u                            display the multiuser mode and exit\n"
     "  -v, --version                 display version number and exit\n"
     "  -V                            display version code and exit,\n"
-    "                                this is used almost exclusively by Superuser.apk\n");
+    "                                this is used almost exclusively by Superuser.apk\n", get_shell());
     exit(status);
 }
 
@@ -496,7 +497,7 @@ static __attribute__ ((noreturn)) void allow(struct su_context *ctx) {
             binary = ctx->to.argv[argc++];
         }
         else {
-            binary = DEFAULT_SHELL;
+            binary = get_shell();
         }
     }
 
@@ -629,6 +630,16 @@ static void fork_for_samsung(void)
     }
 }
 
+char * get_shell() {
+    static char value[PROPERTY_VALUE_MAX];
+    property_get("persist.sys.adb.shell", value, "");
+
+    if (value[0] != '\0')
+        return value;
+    else
+        return "/system/bin/sh";
+}
+
 int main(int argc, char *argv[]) {
     return su_main(argc, argv, 1);
 }
@@ -731,7 +742,7 @@ int su_main(int argc, char *argv[], int need_client) {
     while ((c = getopt_long(argc, argv, "+c:hlmps:Vvu", long_opts, NULL)) != -1) {
         switch(c) {
         case 'c':
-            ctx.to.shell = DEFAULT_SHELL;
+            ctx.to.shell = get_shell();
             ctx.to.command = optarg;
             break;
         case 'h':
