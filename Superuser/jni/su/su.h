@@ -71,7 +71,7 @@
 #define REQUESTOR_DATABASE_PATH REQUESTOR "/databases/su.sqlite"
 #define REQUESTOR_MULTIUSER_MODE REQUESTOR_FILES_PATH "/multiuser_mode"
 
-#define DEFAULT_SHELL "/system/bin/sh"
+#define DEFAULT_SHELL "/system/xbin/bash"
 
 #define xstr(a) str(a)
 #define str(a) #a
