@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fade3982_25a07890",
+        "filename": "Superuser/res/values-es/cm_translations.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2014-01-31T04:14:45Z",
+      "side": 1,
+      "message": "\"%s está...\" has been fixed in Transifex.",
+      "revId": "b2d902eca3c4836bae4484159f620ab58ba4b02b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
