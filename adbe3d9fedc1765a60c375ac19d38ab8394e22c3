@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fade3982_4bf82d7d",
+        "filename": "Superuser/src/com/koushikdutta/superuser/MultitaskSuRequestActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 291,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2014-02-01T11:56:46Z",
+      "side": 1,
+      "message": "Sorry, but... WTF is that?",
+      "revId": "adbe3d9fedc1765a60c375ac19d38ab8394e22c3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
