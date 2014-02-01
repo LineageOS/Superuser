@@ -34,6 +34,24 @@
       "revId": "adbe3d9fedc1765a60c375ac19d38ab8394e22c3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fade3982_4b3f8d25",
+        "filename": "Superuser/src/com/koushikdutta/superuser/MultitaskSuRequestActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 291,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2014-02-01T12:04:23Z",
+      "side": 1,
+      "message": "Ah, got it. Was surprised to see a line of actual code in all these whitespaces/tabs fixes :) (yea, there\u0027s more, I didn\u0027t get to them when I was writing the comment)\n\nTY :)",
+      "parentUuid": "fade3982_0b358545",
+      "revId": "adbe3d9fedc1765a60c375ac19d38ab8394e22c3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
