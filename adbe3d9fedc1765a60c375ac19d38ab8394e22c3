@@ -16,6 +16,24 @@
       "revId": "adbe3d9fedc1765a60c375ac19d38ab8394e22c3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fade3982_0b358545",
+        "filename": "Superuser/src/com/koushikdutta/superuser/MultitaskSuRequestActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 291,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-02-01T12:01:05Z",
+      "side": 1,
+      "message": "Every implementor of the Serializable interface needs a serialVersionUID for identification on deserialization. An anonymous descendant of HashMap is one such implementation ;)",
+      "parentUuid": "fade3982_4bf82d7d",
+      "revId": "adbe3d9fedc1765a60c375ac19d38ab8394e22c3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
