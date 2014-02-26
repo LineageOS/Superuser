@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bae84128_e7497190",
+        "filename": "Superuser/res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2014-02-26T17:19:10Z",
+      "side": 1,
+      "message": "this is a checkox option, so when checked, this option is enabled. No need to mention disable.",
+      "revId": "95071510f8bd0f9dfea08c3761be4a79ba16127b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
