@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bae84128_60e70713",
+        "filename": "Superuser/res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 6261
+      },
+      "writtenOn": "2014-02-28T15:03:13Z",
+      "side": 1,
+      "message": "supprimés ?",
+      "revId": "c7161c5128c5d07435069a39289fc06c47d666da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
