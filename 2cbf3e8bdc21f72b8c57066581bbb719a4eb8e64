@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bae84128_62fff601",
+        "filename": "Superuser/src/com/koushikdutta/superuser/LogFragmentInternal.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-03-21T03:33:02Z",
+      "side": 1,
+      "message": "Indention is fully messed up in this block (both indention in each block as well as missing spaces before { ).",
+      "revId": "2cbf3e8bdc21f72b8c57066581bbb719a4eb8e64",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bae84128_42047214",
+        "filename": "Superuser/src/com/koushikdutta/superuser/LogFragmentInternal.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 242,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-03-21T03:33:02Z",
+      "side": 1,
+      "message": "Same here.",
+      "revId": "2cbf3e8bdc21f72b8c57066581bbb719a4eb8e64",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
