@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7af24918_769fbf03",
+        "filename": "Superuser/src/com/koushikdutta/superuser/LogFragmentInternal.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 65
+      },
+      "writtenOn": "2014-04-27T05:22:46Z",
+      "side": 1,
+      "message": "don\u0027t hang onto fragment references. use findFragment.",
+      "revId": "618e3798958c02cbd46798ad7f310479499d20c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7af24918_56a44356",
+        "filename": "Superuser/src/com/koushikdutta/superuser/PolicyFragmentInternal.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 65
+      },
+      "writtenOn": "2014-04-27T05:22:46Z",
+      "side": 1,
+      "message": "don\u0027t hang onto fragment references. use findFragment.",
+      "revId": "618e3798958c02cbd46798ad7f310479499d20c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7af24918_b68947cd",
+        "filename": "Superuser/src/com/koushikdutta/superuser/PolicyFragmentInternal.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 65
+      },
+      "writtenOn": "2014-04-27T05:22:46Z",
+      "side": 1,
+      "message": "this is really sketchy. Use the item index. (which)",
+      "revId": "618e3798958c02cbd46798ad7f310479499d20c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
