@@ -36,6 +36,24 @@
     },
     {
       "key": {
+        "uuid": "7af24918_09945c35",
+        "filename": "Superuser/src/com/koushikdutta/superuser/PolicyFragmentInternal.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 7001
+      },
+      "writtenOn": "2014-04-28T17:27:57Z",
+      "side": 1,
+      "message": "What do you mean by saying \"don\u0027t hang onto fragment references\"?\nThe reference of the fragment already exists at line 244 and 260 of the old file. I only parse it to another place.",
+      "parentUuid": "7af24918_56a44356",
+      "revId": "618e3798958c02cbd46798ad7f310479499d20c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7af24918_b68947cd",
         "filename": "Superuser/src/com/koushikdutta/superuser/PolicyFragmentInternal.java",
         "patchSetId": 6
