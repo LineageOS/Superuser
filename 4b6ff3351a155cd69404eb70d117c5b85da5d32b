@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "ba0121b8_11e2b7d5",
+        "filename": "Superuser/res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2014-07-05T01:43:34Z",
+      "side": 1,
+      "message": "I think it would be better to use only 1 string: Allow (%1$s)",
+      "revId": "4b6ff3351a155cd69404eb70d117c5b85da5d32b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba0121b8_d1c15f30",
         "filename": "Superuser/src/com/koushikdutta/superuser/MultitaskSuRequestActivity.java",
         "patchSetId": 2
