@@ -16,6 +16,24 @@
       "revId": "76b3b77ae70b001e226fe52ee7909a6621556762",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba0121b8_d1d83f20",
+        "filename": "Superuser/res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 7164
+      },
+      "writtenOn": "2014-07-05T02:15:21Z",
+      "side": 1,
+      "message": "So can I change allow_countdown string to \"(%1$s)\", right?\nIt removes \"Allow\" string while a count down is progress.",
+      "parentUuid": "ba0121b8_b1d14bfe",
+      "revId": "76b3b77ae70b001e226fe52ee7909a6621556762",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
