@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba0121b8_d1c15f30",
+        "filename": "Superuser/src/com/koushikdutta/superuser/MultitaskSuRequestActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 272,
+      "author": {
+        "id": 7001
+      },
+      "writtenOn": "2014-07-05T01:42:36Z",
+      "side": 1,
+      "message": "I suggest not create a new integer variable. Pass the \"mTimeLeft\" instead of \"count\" variable.",
+      "revId": "4b6ff3351a155cd69404eb70d117c5b85da5d32b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
