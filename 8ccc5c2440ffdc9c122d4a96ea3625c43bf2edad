@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba0121b8_91a08792",
+        "filename": "Superuser/src/com/koushikdutta/superuser/MultitaskSuRequestActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 272,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2014-07-05T01:29:03Z",
+      "side": 1,
+      "message": "Use spaces instead of tabs",
+      "revId": "8ccc5c2440ffdc9c122d4a96ea3625c43bf2edad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
