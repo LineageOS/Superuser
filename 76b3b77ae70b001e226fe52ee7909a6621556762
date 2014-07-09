@@ -72,6 +72,24 @@
     },
     {
       "key": {
+        "uuid": "ba0121b8_e958f7fc",
+        "filename": "Superuser/res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2014-07-09T21:46:52Z",
+      "side": 1,
+      "message": "That\u0027s what was done in PS2, but it is confusing for the translators",
+      "parentUuid": "ba0121b8_49e5a335",
+      "revId": "76b3b77ae70b001e226fe52ee7909a6621556762",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba0121b8_a9d0bf54",
         "filename": "Superuser/src/com/koushikdutta/superuser/MultitaskSuRequestActivity.java",
         "patchSetId": 3
