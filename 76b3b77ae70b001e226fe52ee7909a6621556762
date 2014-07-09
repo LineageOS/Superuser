@@ -52,6 +52,40 @@
       "revId": "76b3b77ae70b001e226fe52ee7909a6621556762",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba0121b8_49e5a335",
+        "filename": "Superuser/res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 7001
+      },
+      "writtenOn": "2014-07-09T18:14:36Z",
+      "side": 1,
+      "message": "I don\u0027t feel comfortable to have two variables with almost the same content. I suggest to put here this \"\u003cstring name\u003d\"allow_countdown\"\u003e%1$s (%2$s)\u003c/string\u003e\".",
+      "revId": "76b3b77ae70b001e226fe52ee7909a6621556762",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba0121b8_a9d0bf54",
+        "filename": "Superuser/src/com/koushikdutta/superuser/MultitaskSuRequestActivity.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 271,
+      "author": {
+        "id": 7001
+      },
+      "writtenOn": "2014-07-09T18:14:36Z",
+      "side": 1,
+      "message": "Here I suggest to substitutethe following line with this one\n\"mAllow.setText(getString(R.string.allow_countdown, res.getString(R.string.allow), mTimeLeft));\"",
+      "revId": "76b3b77ae70b001e226fe52ee7909a6621556762",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
