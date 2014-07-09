@@ -144,6 +144,24 @@
     },
     {
       "key": {
+        "uuid": "ba0121b8_89d85b55",
+        "filename": "Superuser/res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2014-07-09T23:21:07Z",
+      "side": 1,
+      "message": "Well, I think I merged enough changes about this. It\u0027s up to you to keep it as-is or revert my latest change",
+      "parentUuid": "ba0121b8_4918031e",
+      "revId": "76b3b77ae70b001e226fe52ee7909a6621556762",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba0121b8_a9d0bf54",
         "filename": "Superuser/src/com/koushikdutta/superuser/MultitaskSuRequestActivity.java",
         "patchSetId": 3
