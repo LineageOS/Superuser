@@ -90,6 +90,24 @@
     },
     {
       "key": {
+        "uuid": "ba0121b8_a92c3f4b",
+        "filename": "Superuser/res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 7001
+      },
+      "writtenOn": "2014-07-09T23:04:44Z",
+      "side": 1,
+      "message": "What do you mean by saying PS2? Please explain me.\nHowever, I believe that if it is confusing for the translators this will be excluded completely.",
+      "parentUuid": "ba0121b8_e958f7fc",
+      "revId": "76b3b77ae70b001e226fe52ee7909a6621556762",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba0121b8_a9d0bf54",
         "filename": "Superuser/src/com/koushikdutta/superuser/MultitaskSuRequestActivity.java",
         "patchSetId": 3
