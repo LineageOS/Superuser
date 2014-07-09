@@ -108,6 +108,24 @@
     },
     {
       "key": {
+        "uuid": "ba0121b8_e9263767",
+        "filename": "Superuser/res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2014-07-09T23:07:16Z",
+      "side": 1,
+      "message": "PS2 -\u003e patchset 2.\nAnyway, I fixed this a few minutes ago: http://review.cyanogenmod.org/#/c/67681/",
+      "parentUuid": "ba0121b8_a92c3f4b",
+      "revId": "76b3b77ae70b001e226fe52ee7909a6621556762",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba0121b8_a9d0bf54",
         "filename": "Superuser/src/com/koushikdutta/superuser/MultitaskSuRequestActivity.java",
         "patchSetId": 3
