@@ -16,6 +16,23 @@
       "revId": "fd09aa97dfebc4e5b9100abb6bde52b9112ac49d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a061dce_006d6c04",
+        "filename": "Superuser/res/values/styles.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2014-07-11T22:32:12Z",
+      "side": 1,
+      "message": "Oops this shouldn\u0027t be here",
+      "revId": "fd09aa97dfebc4e5b9100abb6bde52b9112ac49d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
