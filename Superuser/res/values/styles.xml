@@ -18,6 +18,7 @@
     </style>
     
     <style name="SuperuserDark" parent="@style/AppDarkTheme">
+        <item name="android:actionBarStyle">@android:style/Widget.Holo.ActionBar.Solid</item>
         <item name="bottomButtonBar">@null</item>
         <item name="bottomButtonBarText">?android:attr/textColorPrimary</item>
 
