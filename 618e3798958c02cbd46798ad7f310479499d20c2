@@ -68,6 +68,24 @@
       "revId": "618e3798958c02cbd46798ad7f310479499d20c2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a061dce_6bb6c93e",
+        "filename": "Superuser/src/com/koushikdutta/superuser/PolicyFragmentInternal.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 7001
+      },
+      "writtenOn": "2014-07-12T00:22:06Z",
+      "side": 1,
+      "message": "Variable \"permissionChange\" changes dynamically depending the allow/deny state of the superuser priviledges. If the user has denied superuser priviledges for an app the \"permissionChange \u003d DENY\" and vice versa. The \"permissionChange\" variable is always the first item index.",
+      "parentUuid": "7af24918_b68947cd",
+      "revId": "618e3798958c02cbd46798ad7f310479499d20c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
