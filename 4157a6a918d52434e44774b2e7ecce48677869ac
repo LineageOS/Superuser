@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_3de4100c",
+        "filename": "Superuser/jni/su/su.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 5531
+      },
+      "writtenOn": "2014-08-20T06:01:03Z",
+      "side": 0,
+      "message": "Leave this defined.",
+      "revId": "4157a6a918d52434e44774b2e7ecce48677869ac",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}

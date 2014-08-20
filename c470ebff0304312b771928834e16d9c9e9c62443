@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_5de74c12",
+        "filename": "Superuser/jni/su/su.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 635,
+      "author": {
+        "id": 5531
+      },
+      "writtenOn": "2014-08-20T06:01:03Z",
+      "side": 1,
+      "message": "Set the default return value to DEFAULT_SHELL and remove the if/else below; then, just \"return value\" (this also fixes return from being buried in an if/else which some compiler settings disallow).",
+      "revId": "c470ebff0304312b771928834e16d9c9e9c62443",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
