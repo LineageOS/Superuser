@@ -279,7 +279,7 @@ public class SettingsFragmentInternal extends BetterListFragmentInternal {
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
                 builder.setTitle(R.string.automatic_response);
-                String[] items = new String[] { getString(R.string.prompt), getString(R.string.deny), getString(R.string.allow) };
+                String[] items = new String[] { getString(R.string.prompt), getString(R.string.su_deny), getString(R.string.su_allow) };
                 builder.setItems(items, new OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -351,10 +351,12 @@ public class SettingsFragmentInternal extends BetterListFragmentInternal {
                     setSummary(getString(R.string.no_notification));
                     break;
                 case Settings.NOTIFICATION_TYPE_NOTIFICATION:
-                    setSummary(getString(R.string.notifications_summary, getString(R.string.notification)));
+                    setSummary(getString(R.string.notifications_summary,
+                            getString(R.string.notification_summary)));
                     break;
                 case Settings.NOTIFICATION_TYPE_TOAST:
-                    setSummary(getString(R.string.notifications_summary, getString(R.string.toast)));
+                    setSummary(getString(R.string.notifications_summary,
+                            getString(R.string.toast_summary)));
                     break;
                 }
             }
