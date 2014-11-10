@@ -67,14 +67,14 @@
   <string name="declared_permission">宣言された権限</string>
   <string name="declared_permission_summary">android.permission.ACCESS_SUPERUSERを宣言しているアプリからのリクエストのみを許可する</string>
   <string name="automatic_response">自動応答</string>
-  <string name="prompt">プロンプト</string>
+  <string name="prompt">ダイアログ</string>
   <string name="automatic_response_allow_summary">新しいリクエストを自動的に許可する</string>
   <string name="automatic_response_deny_summary">新しいリクエストを自動的に拒否する</string>
   <string name="automatic_response_prompt_summary">新しいリクエストの確認ダイアログを表示する</string>
   <string name="security">セキュリティ</string>
   <string name="multiuser_policy">マルチユーザーポリシー</string>
   <string name="multiuser_owner_only_summary">端末の所有者のみスーパーユーザーをリクエストできます</string>
-  <string name="multiuser_owner_managed_summary">他のユーザーがスーパーユーザーをリクエストしたときに端末の所有者にプロンプトで確認する</string>
+  <string name="multiuser_owner_managed_summary">他のユーザーがスーパーユーザーをリクエストしたときに端末の所有者にダイアログで確認する</string>
   <string name="multiuser_user_summary">すべてのユーザーがスーパーユーザーをリクエストできます</string>
   <string name="multiuser_owner_only">所有者のみ</string>
   <string name="multiuser_owner_managed">所有者が管理しています</string>

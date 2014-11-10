@@ -47,10 +47,10 @@
   <string name="notifications">Notifica</string>
   <string name="none">Nessuna</string>
   <string name="toast">Avviso</string>
-  <string name="notification">Notifiche</string>
+  <string name="notification">Notifica</string>
   <string name="toast_summary">toast</string>
   <string name="notification_summary">notifica</string>
-  <string name="notifications_summary">Un %s verrà mostrato quando ad un\'app sono stati garantiti o rifiutati i permessi Superuser</string>
+  <string name="notifications_summary">Una %s verrà mostrata quando ad un\'app sono stati garantiti o rifiutati i permessi Superuser</string>
   <string name="no_notification">Non verrà mostrata nessuna notifica</string>
   <string name="enter_pin">Inserisci il PIN</string>
   <string name="enter_new_pin">Inserisci un nuovo PIN</string>
