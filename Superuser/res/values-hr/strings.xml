@@ -48,6 +48,8 @@
   <string name="none">Ništa</string>
   <string name="toast">Tost</string>
   <string name="notification">Obavijest</string>
+  <string name="toast_summary">tost</string>
+  <string name="notification_summary">obavijest</string>
   <string name="notifications_summary">%s će biti prikazane kada je aplikacija odobrila ili odbila Superuser dozvolu</string>
   <string name="no_notification">Obavijesti neće biti prikazane</string>
   <string name="enter_pin">Unesite PIN</string>
