@@ -61,11 +61,6 @@
   <string name="number_seconds">%s sekundes</string>
   <string name="superuser_granted">Superlietotājam ir piešķirts %s</string>
   <string name="superuser_denied">Superlietotājam ir liegts %s</string>
-  <string name="developer_warning">Izstrādātāja brīdinājums:\nandroid.permission.ACCESS_SUPERUSER\nnav deklarētsa manifestā.</string>
-  <string name="superuser_description">pilnas tiesības uz visām iekārtas funkcijām un glabātuvēm</string>
-  <string name="superuser_description_more">Superlietotājs piešķir pilnu piekļuvi visām iekārtas iespējām un glabātuvēm, ieskaitot slepenās un sensitīvās aparatūras daļas. Šī atļauja ir potenciāli bīstama.</string>
-  <string name="declared_permission">Deklarētā atļauja</string>
-  <string name="declared_permission_summary">Atļaut tikai pieprasījumus no lietotnēm, kurās deklarēta android.permission.ACCESS_SUPERUSER</string>
   <string name="automatic_response">Automātiska atbilde</string>
   <string name="prompt">Uzaicinājums</string>
   <string name="automatic_response_allow_summary">Automātiski atļaut jaunus pieprasījumus</string>

@@ -61,11 +61,6 @@
   <string name="number_seconds">%s секунде</string>
   <string name="superuser_granted">Суперкорисник одобрен за %s</string>
   <string name="superuser_denied">Суперкорисник одбијен за %s</string>
-  <string name="developer_warning">Упозорење аутора:\nandroid.permission.ACCESS_SUPERUSER\n није објављено у манифесту.</string>
-  <string name="superuser_description">Пуне дозволе свим функцијама уређаја и складишту</string>
-  <string name="superuser_description_more">Суперкорисник даје пун приступ свим функцијама и складишту, укључујући и безбедне и осетљиве хардверске елементе твог уређаја. Ова дозвола је потенцијално опасна.</string>
-  <string name="declared_permission">Декларисана дозвола </string>
-  <string name="declared_permission_summary">Дозволи само захтеве од апликација које декларишу android.permission.ACCESS_SUPERUSER</string>
   <string name="automatic_response">Аутоматски одговор</string>
   <string name="prompt">Питај</string>
   <string name="automatic_response_allow_summary">Аутоматски дозволи нове захтеве</string>
