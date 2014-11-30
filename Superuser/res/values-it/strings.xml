@@ -61,11 +61,6 @@
   <string name="number_seconds">%s secondi</string>
   <string name="superuser_granted">A %s è stato garantito l\'accesso a Superuser</string>
   <string name="superuser_denied">A %s è stato negato l\'accesso a Superuser</string>
-  <string name="developer_warning">Attenzione sviluppatore:\nandroid.permission.ACCESS_SUPERUSER\nnon è stato dichiarato nel manifest.</string>
-  <string name="superuser_description">massimi privilegi per accedere a tutti gli strumenti e memoria del dispositivo</string>
-  <string name="superuser_description_more">Superuser permette l\'accesso completo a tutta la memoria e le caratteristiche del dispositivo, compresi gli elementi hardware. Questo permesso è potenzialmente dannoso.</string>
-  <string name="declared_permission">Permesso dichiarato</string>
-  <string name="declared_permission_summary">Consenti solo richieste da app che dichiarano android.permission.ACCESS_SUPERUSER</string>
   <string name="automatic_response">Risposta automatica</string>
   <string name="prompt">Prompt</string>
   <string name="automatic_response_allow_summary">Consenti automaticamente le nuove richieste</string>

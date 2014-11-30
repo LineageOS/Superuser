@@ -61,11 +61,6 @@
   <string name="number_seconds">%s sekunder</string>
   <string name="superuser_granted">Superuser tilgang innvilget til %s</string>
   <string name="superuser_denied">Superuser tilgang nektet til %s</string>
-  <string name="developer_warning">Utvikler Advarsel:\nandroid.permission.ACCESS_SUPERUSER\ner ikke deklarert i manifestet.</string>
-  <string name="superuser_description">full tilgang til alle funksjoner og all lagring på enheten</string>
-  <string name="superuser_description_more">Superuser innvilger full tilgang til alle funksjoner og all lagring på enheten, inkludert sikre og sensitive maskinvare elementer på enheten. Denne tillatelsen er potensielt farlig.</string>
-  <string name="declared_permission">Deklarert Tillatelse</string>
-  <string name="declared_permission_summary">Kun tillat forespørsler fra apps som deklarerer android.permission.ACCESS_SUPERUSER</string>
   <string name="automatic_response">Automatisk respons</string>
   <string name="prompt">Spør</string>
   <string name="automatic_response_allow_summary">Automatisk tillat alle nye forespørsler</string>
