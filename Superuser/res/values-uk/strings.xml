@@ -61,11 +61,6 @@
   <string name="number_seconds">%s секунд</string>
   <string name="superuser_granted">%s були надані права Суперкористувача</string>
   <string name="superuser_denied">%s не були надані права Суперкористувача</string>
-  <string name="developer_warning">Увага:\nдозвіл android.permission.ACCESS_SUPERUSER\nне був передбачений в програмі</string>
-  <string name="superuser_description">Повний доступ до функцій пристрою та пам’яті</string>
-  <string name="superuser_description_more">Права Суперкористувача надають повний доступ до функцій та пам’яті пристрою, у тому числі до апаратної складової. Надання цих прав є потенційно небезпечним</string>
-  <string name="declared_permission">Заявлений дозвіл</string>
-  <string name="declared_permission_summary">Дозвіл отримуватимуть тільки програми з заявленням у маніфесті android.permission.ACCESS_SUPERUSER</string>
   <string name="automatic_response">Автоматичний режим</string>
   <string name="prompt">Питати щоразу</string>
   <string name="automatic_response_allow_summary">Нові запити будуть прийняті</string>

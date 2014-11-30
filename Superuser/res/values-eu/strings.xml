@@ -61,11 +61,6 @@
   <string name="number_seconds">%s segundu</string>
   <string name="superuser_granted">Supererabiltzaile baimena %s-ri emana</string>
   <string name="superuser_denied">Supererabiltzaile baimena %s-ri ukatua</string>
-  <string name="developer_warning">Garatzaileentzako abisua: :\nandroid.permission.ACCESS_SUPERUSER\n ez dago manifest-en adierazita.</string>
-  <string name="superuser_description">Sarbide osoa gailuaren funtzio eta biltegiratzera</string>
-  <string name="superuser_description_more">Supererabiltzaileak gailuaren funtzio eta biltegiratzeetara sarbide osoa baimentzen du, gailuaren hardware seguru eta sentikorrak barne. Baimentzea potentzialki arriskutsua da.</string>
-  <string name="declared_permission">Adierazitako baimena</string>
-  <string name="declared_permission_summary">android.permission.ACCESS_SUPERUSER adierazten duten aplikazioen eskaerak bakarrik onartu</string>
   <string name="automatic_response">Erantzun automatikoa</string>
   <string name="prompt">Galdetu</string>
   <string name="automatic_response_allow_summary">Eskaera berriak automatikoki onartu</string>

@@ -61,11 +61,6 @@
   <string name="number_seconds">තත්පර %s</string>
   <string name="superuser_granted">%sට සුපිරි පරිශීලකත්වය දෙන ලදී</string>
   <string name="superuser_denied">%sට සුපිරි පරිශීලකත්වය ප්‍රතික්ෂේප විය</string>
-  <string name="developer_warning">වර්ධක අවවාදය:\nandroid.permission.ACCESS_SUPERUSER\nලේඛනයෙහි ප්‍රකාශ කර නොමැත.</string>
-  <string name="superuser_description">උපාංගයේ විශේෂාංග සහ ආචයනය සඳහා සම්පූර්ණ අනුමැතිය</string>
-  <string name="superuser_description_more">සුපිරි පරිශීලක, ඔබගේ උපාංගයේ සුරක්ෂිත සහ සංවේදී දෘඩාංග මූලිකාංගද ඇතුලත්ව, සියලුම උපාංග විශේෂාංග සහ ආචයනය සඳහා සම්පූර්ණ පිවිසුම් බලය ලබාදෙයි. මෙම අනුමැතිය අනතුරුදායක විය හැක.</string>
-  <string name="declared_permission">ප්‍රකාශ කල අනුමැතිය</string>
-  <string name="declared_permission_summary">android.permission.ACCESS_SUPERUSER අනුමැතිය ප්‍රකාශිත යෙදුම් සඳහා පමණක් ඉල්ලීම් අනුමත කරන්න</string>
   <string name="automatic_response">ස්වයංක්‍රීය ප්‍රතිචාරය</string>
   <string name="prompt">ඉඟි කරන්න</string>
   <string name="automatic_response_allow_summary">නව ඉල්ලීම් ස්වයංක්‍රීයව අනුමත කරන්න</string>

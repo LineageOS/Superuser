@@ -61,11 +61,6 @@
   <string name="number_seconds">%s چرکەکان</string>
   <string name="superuser_granted">سوپه‌ریوزه‌ر ڕێگەیدا بۆ %s</string>
   <string name="superuser_denied">سوپه‌ریوزه‌ر ڕێگەینەدا بۆ %s</string>
-  <string name="developer_warning">ئاگاداری گەشەپێدەر:\nandroid.permission.ACCESS_SUPERUSER\nnot declared in manifest.</string>
-  <string name="superuser_description">دەسەڵاتی تەواو بۆ هەموو تایبەتمەندییەکان و بیرگە ئامێرەکە</string>
-  <string name="superuser_description_more">سوپه‌ریوزه‌ر ڕێگه‌ ده‌دات به‌ هه‌موو بیرگه‌ و شێوازی ئامێره‌کان، ڕه‌قه‌کاڵا ده‌گرێته‌وه‌،ئه‌م کرداره‌ مه‌ترسی داره‌</string>
-  <string name="declared_permission">هه‌موو داخوازیه‌کان په‌رچدرایه‌وه‌</string>
-  <string name="declared_permission_summary">تەنها ڕێگە بدە بەو داواکارییانەی کە لە بەرنامەکانی ئەندرۆیدەوە دێن،.permission.ACCESS_SUPERUSER</string>
   <string name="automatic_response">وڵامدانه‌وه‌ی خۆکارانه‌</string>
   <string name="prompt">خێرا</string>
   <string name="automatic_response_allow_summary">خۆکارانه‌ ڕێگه‌بدە بە داواکارییە نوێیەکان</string>

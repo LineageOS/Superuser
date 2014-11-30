@@ -61,11 +61,6 @@
   <string name="number_seconds">%s sekundit</string>
   <string name="superuser_granted">Superkasutaja lubatud rakendusele %s</string>
   <string name="superuser_denied">Superkasutaja keelatud rakendusele %s</string>
-  <string name="developer_warning">Arendaja Hoiatus:\nandroid.permission.ACCESS_SUPERUSER\nei ole deklareeritud manifestis.</string>
-  <string name="superuser_description">täielikud õigused kõigile seadme võimalustele ja mälule</string>
-  <string name="superuser_description_more">Superkasutaja lubab täieliku ligipääsu kõigile telefoni võimalustele ja mälule, kaasaarvatud kaitstud ja tundlikud riistvaraosad sinu seadmel. See luba on potentsiaalselt ohtlik.</string>
-  <string name="declared_permission">Kinnitatud Luba</string>
-  <string name="declared_permission_summary">Luba ainult taotlused mis deklareerivad android.permission.ACCESS_SUPERUSER</string>
   <string name="automatic_response">Automaatne Vastus</string>
   <string name="prompt">Küsi</string>
   <string name="automatic_response_allow_summary">Luba uued päringud automaatselt</string>
