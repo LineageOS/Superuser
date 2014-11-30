@@ -59,11 +59,6 @@
   <string name="number_seconds">%s sekundi</string>
   <string name="superuser_granted">Superuser odobren aplikaciji %s</string>
   <string name="superuser_denied">Superuser odbijen za %s</string>
-  <string name="developer_warning">Upozorenje za razvojne programere:\nandroid.permission.ACCESS_SUPERUSER\nnot declared in manifest.</string>
-  <string name="superuser_description">potpuna dozvola svim značajkama uređaja i pohranjivanju</string>
-  <string name="superuser_description_more">Superuser odobrava potpuni pristup svim značajkama uređaja i pohranjivanju, uključujući sigurnosne i osjetljive hardverske elemente vašeg uređaja. Ova je dozvola potencijalno opasna.</string>
-  <string name="declared_permission">Dopušteno</string>
-  <string name="declared_permission_summary">Odobrite samo zahtjeve aplikacija koje imaju android.permission.ACCESS_SUPERUSER</string>
   <string name="automatic_response">Automatski Odgovor</string>
   <string name="prompt">Obavještenje</string>
   <string name="automatic_response_allow_summary">Automatski dopusti nove zahtjeve</string>
