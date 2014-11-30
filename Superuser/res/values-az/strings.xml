@@ -61,12 +61,6 @@
   <string name="number_seconds">%s saniyə</string>
   <string name="superuser_granted">%s super istifadәçi girişinә icazә verilib</string>
   <string name="superuser_denied">%s super istifadәçi girişinә icazә verilmәyib</string>
-  <string name="developer_warning">geliştirici
-Diqqәt:\nandroid.permission.ACCESS_SUPERUSER\nnot declared in manifest.</string>
-  <string name="superuser_description">bütün cihaz xüsusiyyətlərinә və yaddaşına tam icazə</string>
-  <string name="superuser_description_more">Superuser bütün cihaz xüsusiyyətləri və cihazın təhlükəsiz və həssas hardware elementləri daxil olmaqla storage, tam erişim. Bu icazə potensial təhlükəl yaradır.</string>
-  <string name="declared_permission">Elan edilmiş sorğu</string>
-  <string name="declared_permission_summary">Yalnız android.permission.ACCESS_SUPERUSER bəyan ki apps sorğu imkan verir</string>
   <string name="automatic_response">Avtomatik cavab</string>
   <string name="prompt">Cәld</string>
   <string name="automatic_response_allow_summary">Avtomatik olaraq yeni sorğuları qәbul etmәk</string>

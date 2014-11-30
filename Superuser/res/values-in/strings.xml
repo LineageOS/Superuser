@@ -61,11 +61,6 @@
   <string name="number_seconds">%s detik</string>
   <string name="superuser_granted">Superuser diberikan untuk %s</string>
   <string name="superuser_denied">Superuser ditolak untuk %s</string>
-  <string name="developer_warning">Peringatan Pengembang:\nandroid.permission.ACCESS_SUPERUSER\ntidak dideklarasikan dalam manifes.</string>
-  <string name="superuser_description">izin penuh untuk semua fitur perangkat dan penyimpanan</string>
-  <string name="superuser_description_more">Superuser memberikan akses penuh ke semua fitur perangkat dan penyimpanan, termasuk unsur-unsur aman dan sensitif perangkat anda. Izin ini berpotensi menimbulkan bahaya.</string>
-  <string name="declared_permission">Izin Dideklarasikan</string>
-  <string name="declared_permission_summary">Hanya perbolehkan permintaan dari aplikasi yang mendeklarasikan android.permission.ACCESS_SUPERUSER</string>
   <string name="automatic_response">Respon Otomatis</string>
   <string name="prompt">Tampilkan</string>
   <string name="automatic_response_allow_summary">Otomatis perbolehkan permintaan baru</string>
