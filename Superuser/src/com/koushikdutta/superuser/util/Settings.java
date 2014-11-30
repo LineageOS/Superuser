@@ -174,7 +174,7 @@ public class Settings {
             return TextUtils.isEmpty(hashed);
         return pin.equals(hashed);
     }
-
+/*
     private static final String KEY_REQUIRE_PREMISSION = "require_permission";
     public static boolean getRequirePermission(Context context) {
         return getBoolean(context, KEY_REQUIRE_PREMISSION, false);
@@ -183,7 +183,7 @@ public class Settings {
     public static void setRequirePermission(Context context, boolean require) {
         setBoolean(context, KEY_REQUIRE_PREMISSION, require);
     }
-
+*/
     private static final String KEY_AUTOMATIC_RESPONSE = "automatic_response";
     public static final int AUTOMATIC_RESPONSE_PROMPT = 0;
     public static final int AUTOMATIC_RESPONSE_ALLOW = 1;

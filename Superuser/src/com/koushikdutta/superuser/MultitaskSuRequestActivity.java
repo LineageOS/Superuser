@@ -143,7 +143,7 @@ public class MultitaskSuRequestActivity extends FragmentActivity {
         new File(mSocketPath).delete();
     }
 
-    public static final String PERMISSION = "android.permission.ACCESS_SUPERUSER";
+    //public static final String PERMISSION = "android.permission.ACCESS_SUPERUSER";
 
     boolean mRequestReady;
     void requestReady() {
@@ -180,7 +180,7 @@ public class MultitaskSuRequestActivity extends FragmentActivity {
         ((TextView)findViewById(R.id.uid_header)).setText(Integer.toString(mDesiredUid));
         ((TextView)findViewById(R.id.command_header)).setText(mDesiredCmd);
 
-        boolean superuserDeclared = false;
+        //boolean superuserDeclared = false;
         boolean granted = false;
         if (pkgs != null && pkgs.length > 0) {
             for (String pkg: pkgs) {
@@ -194,6 +194,7 @@ public class MultitaskSuRequestActivity extends FragmentActivity {
                     ((TextView)findViewById(R.id.app_header)).setText(pi.applicationInfo.loadLabel(pm));
                     ((TextView)findViewById(R.id.package_header)).setText(pi.packageName);
 
+                    /*
                     if (pi.requestedPermissions != null) {
                         for (String perm: pi.requestedPermissions) {
                             if (PERMISSION.equals(perm)) {
@@ -202,8 +203,9 @@ public class MultitaskSuRequestActivity extends FragmentActivity {
                             }
                         }
                     }
+                    */
 
-                    granted |= checkPermission(PERMISSION, mPid, mCallerUid) == PackageManager.PERMISSION_GRANTED;
+                    //granted |= checkPermission(PERMISSION, mPid, mCallerUid) == PackageManager.PERMISSION_GRANTED;
 
                     // could display them all, but screw it...
                     // maybe a better ux for this later
@@ -215,9 +217,11 @@ public class MultitaskSuRequestActivity extends FragmentActivity {
             findViewById(R.id.unknown).setVisibility(View.GONE);
         }
 
+        /*
         if (!superuserDeclared) {
             findViewById(R.id.developer_warning).setVisibility(View.VISIBLE);
         }
+        */
 
         // handle automatic responses
         // these will be considered permanent user policies
@@ -225,6 +229,7 @@ public class MultitaskSuRequestActivity extends FragmentActivity {
         // this is so future su requests dont invoke ui
 
         // handle declared permission
+        /*
         if (Settings.getRequirePermission(MultitaskSuRequestActivity.this) && !superuserDeclared) {
             Log.i(LOGTAG, "Automatically denying due to missing permission");
             mHandler.post(new Runnable() {
@@ -236,6 +241,7 @@ public class MultitaskSuRequestActivity extends FragmentActivity {
             });
             return;
         }
+        */
 
         // automatic response
         switch (Settings.getAutomaticResponse(MultitaskSuRequestActivity.this)) {
@@ -244,8 +250,8 @@ public class MultitaskSuRequestActivity extends FragmentActivity {
 //            if (Settings.isPinProtected(MultitaskSuRequestActivity.this))
 //                break;
             // check if the permission must be granted
-            if (Settings.getRequirePermission(MultitaskSuRequestActivity.this) && !granted)
-                break;
+//            if (Settings.getRequirePermission(MultitaskSuRequestActivity.this) && !granted)
+//                break;
             Log.i(LOGTAG, "Automatically allowing due to user preference");
             mHandler.post(new Runnable() {
                 @Override
