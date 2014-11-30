@@ -61,11 +61,6 @@
   <string name="number_seconds">%s 초</string>
   <string name="superuser_granted">%s이(가) 슈퍼유저 권한을 부여받았습니다.</string>
   <string name="superuser_denied">%s의 슈퍼유저 권한이 거부되었습니다.</string>
-  <string name="developer_warning">개발자 경고:\nandroid.permission.ACCESS_SUPERUSER가\n매니페스트에 정의되지 않았습니다.</string>
-  <string name="superuser_description">장치 기능 및 저장소에 대한 모든 권한</string>
-  <string name="superuser_description_more">슈퍼유저는 장치의 하드웨어 구성 요소를 포함하여 모든 장치 기능과 스토리지에 대한 전체 액세스 권한을 부여합니다. 이 권한은 위험합니다.</string>
-  <string name="declared_permission">선언 허가</string>
-  <string name="declared_permission_summary">android.permission.ACCESS_SUPERUSER를 선언한 앱의 요청만 허가</string>
   <string name="automatic_response">자동 응답</string>
   <string name="prompt">묻기</string>
   <string name="automatic_response_allow_summary">자동으로 새 요청을 허가</string>
