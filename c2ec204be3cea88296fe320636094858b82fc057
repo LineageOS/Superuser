@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9abb7d3a_110f7fe2",
+        "filename": "Superuser/jni/su/daemon.c",
+        "patchSetId": 3
+      },
+      "lineNbr": 283,
+      "author": {
+        "id": 5503
+      },
+      "writtenOn": "2014-12-12T13:10:08Z",
+      "side": 0,
+      "message": "sizeof(path)",
+      "revId": "c2ec204be3cea88296fe320636094858b82fc057",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9abb7d3a_91036fb8",
+        "filename": "Superuser/jni/su/daemon.c",
+        "patchSetId": 3
+      },
+      "lineNbr": 504,
+      "author": {
+        "id": 5503
+      },
+      "writtenOn": "2014-12-12T13:10:08Z",
+      "side": 0,
+      "message": "why change this? iirc void (*func)(int) is the standard signal handler signature.  doesn\u0027t this now produce a warning?",
+      "revId": "c2ec204be3cea88296fe320636094858b82fc057",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9abb7d3a_b13033a0",
+        "filename": "Superuser/jni/su/su.c",
+        "patchSetId": 3
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 5503
+      },
+      "writtenOn": "2014-12-12T13:10:08Z",
+      "side": 0,
+      "message": "might be nicer to separate into 2 stmts instead, like above.\n\nalso would be nice to check the return from fork() against -1.",
+      "revId": "c2ec204be3cea88296fe320636094858b82fc057",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
