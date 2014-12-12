@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9abb7d3a_51f907c8",
+        "filename": "Superuser/jni/su/daemon.c",
+        "patchSetId": 3
+      },
+      "lineNbr": 283,
+      "author": {
+        "id": 10
+      },
+      "writtenOn": "2014-12-12T13:06:15Z",
+      "side": 1,
+      "message": "Ouch",
+      "revId": "1e8a987ebefb6dd48d97ed6a0f273851599a54a8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9abb7d3a_f113db0b",
+        "filename": "Superuser/jni/su/daemon.c",
+        "patchSetId": 3
+      },
+      "lineNbr": 316,
+      "author": {
+        "id": 10
+      },
+      "writtenOn": "2014-12-12T13:06:15Z",
+      "side": 1,
+      "message": "Don\u0027t leave it unbounded. Compare up to PATH_MAX",
+      "revId": "1e8a987ebefb6dd48d97ed6a0f273851599a54a8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
