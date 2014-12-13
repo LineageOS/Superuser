@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aa08908_f140020a",
+        "filename": "Superuser/src/com/koushikdutta/superuser/MultitaskSuRequestActivity.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 184,
+      "author": {
+        "id": 10984
+      },
+      "writtenOn": "2014-12-13T06:32:43Z",
+      "side": 0,
+      "message": "There\u0027s no more need for \u0027granted\u0027",
+      "revId": "86dbf4f6f2b30b03de2cf3d7b17007876e252c29",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
