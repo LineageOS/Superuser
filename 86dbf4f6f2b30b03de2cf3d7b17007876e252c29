@@ -16,6 +16,23 @@
       "revId": "86dbf4f6f2b30b03de2cf3d7b17007876e252c29",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_31ca8a50",
+        "filename": "Superuser/src/com/koushikdutta/superuser/MultitaskSuRequestActivity.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 184,
+      "author": {
+        "id": 10984
+      },
+      "writtenOn": "2014-12-13T08:37:27Z",
+      "side": 0,
+      "message": "AFAICS, granted is no longer used, and can be removed",
+      "revId": "86dbf4f6f2b30b03de2cf3d7b17007876e252c29",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
