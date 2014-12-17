@@ -569,12 +569,6 @@ int su_main(int argc, char *argv[], int need_client) {
         deny(&ctx);
     }
 
-    // autogrant shell at this point
-    if (ctx.from.uid == AID_SHELL) {
-        ALOGD("Allowing shell.");
-        allow(&ctx);
-    }
-
     if (!check_appops(ctx.from.uid, resolve_package_name(ctx.from.uid))) {
         ALOGD("Allowing via appops.");
         allow(&ctx);
