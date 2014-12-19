@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aa08908_e5166aa6",
+        "filename": "Superuser/jni/su/binder/appops-wrapper.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-12-19T02:58:22Z",
+      "side": 1,
+      "message": "This needs a LOG_TAG definition.",
+      "revId": "6bfb51229d42d0a4df16f10be4247e58036d6ef8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
