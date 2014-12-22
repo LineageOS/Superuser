@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aa08908_57dd6d41",
+        "filename": "Superuser/jni/su/binder/appops-wrapper.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2014-12-22T15:27:42Z",
+      "side": 1,
+      "message": "Privilege is misspelled in the debug message.",
+      "revId": "aea6daa5e58268b11c501a0a914eb52b8116572d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_37e26104",
+        "filename": "Superuser/jni/su/binder/appops-wrapper.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2014-12-22T15:27:42Z",
+      "side": 1,
+      "message": "Same here.",
+      "revId": "aea6daa5e58268b11c501a0a914eb52b8116572d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
