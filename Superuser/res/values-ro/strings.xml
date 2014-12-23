@@ -42,7 +42,7 @@
   <string name="logging_summary">Activați înscrierea în jurnal a tuturor cererilor Superuser</string>
   <string name="pin_protection">Protecție cu PIN</string>
   <string name="pin_protection_summary">Necesită introducerea unui PIN pentru aprobarea cererilor Superuser</string>
-  <string name="request_timeout">Expirare Cerere</string>
+  <string name="request_timeout">Expirare cerere</string>
   <string name="request_timeout_summary">Cererile Superuser vor expira și vor fi refuzate după %s secunde</string>
   <string name="notifications">Notificări</string>
   <string name="none">Nimic</string>
@@ -102,7 +102,7 @@
   <string name="whats_new">Ce este nou</string>
   <string name="rate">Evaluare</string>
   <string name="theme">Temă</string>
-  <string name="light">Luminos</string>
+  <string name="light">Luminoasă</string>
   <string name="dark">Întunecat</string>
   <string name="pin_disabled">Protecție PIN pentru Superuser dezactivată</string>
   <string name="revoke_permission">Revocă permisiune Superuser</string>
