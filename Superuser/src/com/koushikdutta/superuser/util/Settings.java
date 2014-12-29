@@ -329,11 +329,11 @@ public class Settings {
             case SUPERUSER_ACCESS_APPS_AND_ADB:
                 return val;
             default:
-                return SUPERUSER_ACCESS_APPS_AND_ADB;
+                return SUPERUSER_ACCESS_DISABLED;
             }
         }
         catch (Exception e) {
-            return SUPERUSER_ACCESS_APPS_AND_ADB;
+            return SUPERUSER_ACCESS_DISABLED;
         }
     }
 
