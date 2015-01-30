@@ -73,8 +73,8 @@
   <string name="automatic_response_prompt_summary">Rodyti langą naujoms užklausoms</string>
   <string name="security">Sauga</string>
   <string name="multiuser_policy">Kelių vartotojų politika</string>
-  <string name="multiuser_owner_only_summary">Tik prietaiso savininkas gali prašyti „Superuser“</string>
-  <string name="multiuser_owner_managed_summary">Prietaiso savininkas bus įspėtas kai kitas vartotojas prašys „Superuser“</string>
+  <string name="multiuser_owner_only_summary">Tik įrenginio savininkas gali prašyti „Superuser“</string>
+  <string name="multiuser_owner_managed_summary">Įrenginio savininkas bus įspėtas kai kitas vartotojas prašys „Superuser“</string>
   <string name="multiuser_user_summary">Visi vartotojai gali prašyti „Superuser“</string>
   <string name="multiuser_owner_only">Tik savininkas</string>
   <string name="multiuser_owner_managed">Savininkas tvarko</string>
