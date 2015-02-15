@@ -46,7 +46,7 @@
   <string name="request_timeout_summary">Superlietotāja pieprasījumi būs noilgti un liegti pēc %s sekundēm</string>
   <string name="notifications">Ziņojumi</string>
   <string name="none">Neviens</string>
-  <string name="toast">Apsveikums</string>
+  <string name="toast">Piedāvājums</string>
   <string name="notification">Paziņojums</string>
   <string name="toast_summary">apsveikums</string>
   <string name="notification_summary">paziņojums</string>

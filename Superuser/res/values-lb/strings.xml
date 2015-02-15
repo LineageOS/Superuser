@@ -37,7 +37,7 @@
   <string name="settings">Astellungen</string>
   <string name="delete">Läschen</string>
   <string name="no_logs">Keng Protokoller</string>
-  <string name="no_apps">Et gi momentan keng Superuser App-Reegelen.</string>
+  <string name="no_apps">Et gi momentan keng Superuser App-Regelen.</string>
   <string name="logging">Protokolléierung</string>
   <string name="logging_summary">All d\'Superuser-Ufroe protokolléieren</string>
   <string name="pin_protection">PIN-Schutz</string>
@@ -55,7 +55,7 @@
   <string name="enter_pin">PIN aginn</string>
   <string name="enter_new_pin">Neie PIN aginn</string>
   <string name="incorrect_pin">Inkorrekte PIN</string>
-  <string name="confirm_pin">PIN confirméieren</string>
+  <string name="confirm_pin">PIN bestätegen</string>
   <string name="pin_mismatch">D\'PINe stëmmen net iwwereneen</string>
   <string name="pin_set">PIN-Schutz aktivéiert</string>
   <string name="number_seconds">%s Sekonnen</string>
@@ -79,7 +79,7 @@
   <string name="multiuser_owner_only">Just de Besëtzer</string>
   <string name="multiuser_owner_managed">Vum Besëtzer geréiert</string>
   <string name="multiuser_user">All d\'Benotzer</string>
-  <string name="multiuser_require_owner">Just de Besëtzer kann d\'Méibenotzer-Reegelen änneren.</string>
+  <string name="multiuser_require_owner">Just de Besëtzer kann d\'Méibenotzer-Regelen änneren.</string>
   <string name="owner_login_info">W.e.g. op de Besëtzer-Kont wiessele fir dës Ufro z\'accordéieren oder ze refuséieren.</string>
   <string name="all_commands">All d\'Befeeler</string>
   <string name="about">Iwwer</string>
