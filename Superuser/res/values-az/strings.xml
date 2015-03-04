@@ -42,8 +42,8 @@
   <string name="logging_summary">Bütün Super İstifadәçi tәlәblәrә daxil olmaq imkan verilmәsi</string>
   <string name="pin_protection">PİN müdafiyә</string>
   <string name="pin_protection_summary">Super İstifadәçi sorğu təsdiq üçün PİN daxil etmә tәlәbi</string>
-  <string name="request_timeout">sorğu fasiləsi</string>
-  <string name="request_timeout_summary">Super Istifadәçi tәlәbi %s saniyәdәn sonra inkar edilәcәk</string>
+  <string name="request_timeout">Sorğuya qoyulan vaxt</string>
+  <string name="request_timeout_summary">%s saniyә sonra Super Istifadәçi sorğuları üçün qoyulan vaxt başa çatıb rədd ediləcək</string>
   <string name="notifications">Xəbərdarlıqlar</string>
   <string name="none">Heç bir</string>
   <string name="toast">Tost</string>
