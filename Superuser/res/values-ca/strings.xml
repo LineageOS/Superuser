@@ -26,7 +26,7 @@
   <string name="info">Alerta: Si no entens això, hauries de denegar la petició.</string>
   <string name="request">Petició de superusuari</string>
   <string name="package_header">Paquet:</string>
-  <string name="app_header">App:</string>
+  <string name="app_header">Aplicació:</string>
   <string name="uid_header">UID demanada:</string>
   <string name="command_header">Ordre:</string>
   <string name="this_time_only">Només aquesta vegada</string>
@@ -37,7 +37,7 @@
   <string name="settings">Configuració</string>
   <string name="delete">Esborra</string>
   <string name="no_logs">Sense Registres</string>
-  <string name="no_apps">Actualment no hi ha polítiques d\'app de Superusuari.</string>
+  <string name="no_apps">Actualment no hi ha polítiques d\'aplicació de Superusuari.</string>
   <string name="logging">Registre</string>
   <string name="logging_summary">Activa o desactiva el registre de totes les peticions de Superusuari</string>
   <string name="pin_protection">Protecció amb PIN</string>
@@ -83,7 +83,7 @@
   <string name="owner_login_info">Si us plau canvia al compte del propietari per aprovar o denegar aquesta petició.</string>
   <string name="all_commands">Totes les ordres</string>
   <string name="about">Quant a</string>
-  <string name="apps">Apps</string>
+  <string name="apps">Aplicacions</string>
   <string name="installing">Instal·lant</string>
   <string name="installing_superuser">Instal·lant Superuari\u2026</string>
   <string name="install_superuser">Instal·la Superusuari</string>

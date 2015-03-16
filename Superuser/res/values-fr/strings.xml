@@ -52,8 +52,8 @@
   <string name="notification_summary">Une notification sera affichée</string>
   <string name="notifications_summary">%s lorsque les droits Super-utilisateur seront accordés ou refusés à une application</string>
   <string name="no_notification">Aucune notification ne sera affichée</string>
-  <string name="enter_pin">Entrer le code</string>
-  <string name="enter_new_pin">Entrer le nouveau code</string>
+  <string name="enter_pin">Entrez le code</string>
+  <string name="enter_new_pin">Entrez le nouveau code</string>
   <string name="incorrect_pin">Code incorrect</string>
   <string name="confirm_pin">Confirmer le code</string>
   <string name="pin_mismatch">Le code entré n\'est pas valide</string>
@@ -91,7 +91,7 @@
   <string name="recovery_install">Installation par Recovery</string>
   <string name="install">Installer</string>
   <string name="checking_superuser">Vérification de Super-utilisateur\u2026</string>
-  <string name="install_error">Une erreur est survenue pendant l\'installation de Super-utilisateur. Merci d\'envoyer le rapport d\'erreur au développeur.</string>
+  <string name="install_error">Une erreur est survenue pendant l\'installation de Super-utilisateur. Veuillez envoyer le rapport d\'erreur au développeur.</string>
   <string name="install_success">Super-utilisateur installé avec succès.</string>
   <string name="su_binary_outdated">Le binaire su n\'est pas à jour.</string>
   <string name="superuser_access">Accès Super-utilisateur</string>
