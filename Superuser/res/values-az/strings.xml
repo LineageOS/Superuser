@@ -22,7 +22,7 @@
   <string name="su_deny">Rədd et</string>
   <string name="status_incoming">Gələn Super İstifadәçi Sorğusu\u2026</string>
   <string name="unknown_uid">Bilinməyən UID: %s</string>
-  <string name="application_request">%s Super İstifadәçi girişi istəyir.</string>
+  <string name="application_request">%s Super İstifadәçi müraciəti istəyir.</string>
   <string name="info">Xəbərdarlıq: Әgәr bunu başa düşmürsüzsә, bu sorğuya icazə verməyin.</string>
   <string name="request">Super İstifadәçi Sorğusu</string>
   <string name="package_header">Paket:</string>
@@ -63,7 +63,7 @@
   <string name="superuser_denied">Super istifadəçi hüquqları %s üçün rədd edildi</string>
   <string name="developer_warning">Tərtibatçı Xəbərdarlığı:\nandroid.permission.ACCESS_SUPERUSER\nmanifest daxilində tənzimlənməyib.</string>
   <string name="superuser_description">bütün cihaz özəlliklərinə və yaddaşına tam giriş</string>
-  <string name="superuser_description_more">Super istifadəçi cihazınızın təhlükəsiz və həssas avadanlıq elementləri daxil olmaqla, bütün cihaz özəlliklərinə və yaddaşına tam girişi təmin edəcək. Ehtimalki bu giriş təhlükəlidir.</string>
+  <string name="superuser_description_more">Super istifadəçi cihazınızın təhlükəsiz və həssas avadanlıq elementləri daxil olmaqla, bütün cihaz özəlliklərinə və yaddaşına tam müraciəti təmin edəcək. Ehtimalki bu giriş təhlükəlidir.</string>
   <string name="declared_permission">Müəyyənləşdirilmiş İcazə</string>
   <string name="declared_permission_summary">Yalnız android.permission.ACCESS_SUPERUSER icazəsini müəyyənləşdirən tətbiqetmələrdən gələn sorğulara icazə ver</string>
   <string name="automatic_response">Avtomatik cavab</string>
@@ -74,7 +74,7 @@
   <string name="security">Təhlükəsizlik</string>
   <string name="multiuser_policy">Multi istifadәçi siyasәti</string>
   <string name="multiuser_owner_only_summary">Yalnız cihaz sahibi Super İstifadәçi tələb edə bilər</string>
-  <string name="multiuser_owner_managed_summary">Başqa bir istifadəçi Superuser xahiş zaman cihaz sahibi istenilir</string>
+  <string name="multiuser_owner_managed_summary">Başqa bir istifadəçi Super istifadəçi sorğusu edəndə, cihazın sahibi xəbərdar ediləcək</string>
   <string name="multiuser_user_summary">Bütün istifadəçilər Superuser tələb edə bilər</string>
   <string name="multiuser_owner_only">Ancaq sahib</string>
   <string name="multiuser_owner_managed">Sahib idarә olunub</string>
@@ -87,14 +87,12 @@
   <string name="installing">Quraşdırma</string>
   <string name="installing_superuser">Superuser\u2026 quraşdırılır</string>
   <string name="install_superuser">Superuser quraşdırın</string>
-  <string name="install_superuser_info">Superuser ikilinin (su)Yenilənmәsi lazımdır \n\nXaiş olunur bir quraşdırma metodu seçin. \nRecovery rejimi quraşdırması HTC cihazlar üçün tövsiyə olunur.</string>
-  <string name="recovery_install">Recovery quraşdırması</string>
   <string name="install">Quraşdirmaq</string>
   <string name="checking_superuser">Superuser\u2026 yoxlanılır</string>
   <string name="install_error">Super İstifadәçini quraşdırılması zaman sәhv baş verdi. Xaiş olunur sәhvin logunu gәliştiriciyә göndәrәsiz.</string>
   <string name="install_success">Superuser quraşdırılması uğurlu olub.</string>
   <string name="su_binary_outdated">Su binar tarixi sәhvdir.</string>
-  <string name="superuser_access">Superuser keçidi</string>
+  <string name="superuser_access">Super istifadəçi müraciəti</string>
   <string name="access_disabled">Deaktiv</string>
   <string name="apps_only">Ancaq programlar</string>
   <string name="adb_only">Ancaq ADB</string>
