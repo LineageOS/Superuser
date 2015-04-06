@@ -96,7 +96,7 @@
   <string name="su_binary_outdated">Le binaire su n\'est pas à jour.</string>
   <string name="superuser_access">Accès Super-utilisateur</string>
   <string name="access_disabled">Désactivé</string>
-  <string name="apps_only">Application uniquement</string>
+  <string name="apps_only">Applications uniquement</string>
   <string name="adb_only">ADB uniquement</string>
   <string name="apps_and_adb">Application et ADB</string>
   <string name="whats_new">Nouveautés</string>
