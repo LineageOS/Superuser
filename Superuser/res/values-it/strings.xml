@@ -35,7 +35,7 @@
   <string name="interactive">Interattivo</string>
   <string name="logs">Log</string>
   <string name="settings">Impostazioni</string>
-  <string name="delete">Cancella</string>
+  <string name="delete">Elimina</string>
   <string name="no_logs">Nessun log</string>
   <string name="no_apps">Nessuna app gestita da Superuser.</string>
   <string name="logging">Registrazione log</string>

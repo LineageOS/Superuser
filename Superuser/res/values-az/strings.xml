@@ -87,6 +87,8 @@
   <string name="installing">Quraşdırma</string>
   <string name="installing_superuser">Superuser\u2026 quraşdırılır</string>
   <string name="install_superuser">Superuser quraşdırın</string>
+  <string name="install_superuser_info">Super istifadəçi ikili kodu (su) yeniləməlidir.\n\nZəhmət olmasa quraşdırma üsulunu seçin.\nHTC cihazlar üçün bərpa (recovery) rejim quraşdırması tövsiyə olunur.</string>
+  <string name="recovery_install">Recovery (Bərpa rejimi) Quraşdırma</string>
   <string name="install">Quraşdirmaq</string>
   <string name="checking_superuser">Superuser\u2026 yoxlanılır</string>
   <string name="install_error">Super İstifadәçini quraşdırılması zaman sәhv baş verdi. Xaiş olunur sәhvin logunu gәliştiriciyә göndәrәsiz.</string>
