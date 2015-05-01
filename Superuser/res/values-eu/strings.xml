@@ -41,7 +41,7 @@
   <string name="logging">Erregistroa</string>
   <string name="logging_summary">Supererabiltzaile eskaera guztien erregistroa gaitu</string>
   <string name="pin_protection">PIN babesa</string>
-  <string name="pin_protection_summary">Supererabiltzaile eskaera onartzeko PIN-a sartzea beharrezkoa da</string>
+  <string name="pin_protection_summary">Eskatu PIN bat sartzea Supererabiltzaile eskaerak onartzeko</string>
   <string name="request_timeout">Itxarote denbora</string>
   <string name="notifications">Jakinarazpenak</string>
   <string name="none">Bat ere ez</string>
@@ -57,6 +57,7 @@
   <string name="confirm_pin">PIN-a berretsi</string>
   <string name="pin_mismatch">Sarturiko PIN-ak ez datoz bat</string>
   <string name="pin_set">PIN bidezko babesa gaituta</string>
+  <string name="number_seconds">%s segundo</string>
   <string name="superuser_granted">Supererabiltzaile baimena %s-ri emana</string>
   <string name="superuser_denied">Supererabiltzaile baimena %s-ri ukatua</string>
   <string name="developer_warning">Garatzaileentzako abisua: :\nandroid.permission.ACCESS_SUPERUSER\n ez dago manifest-en adierazita.</string>

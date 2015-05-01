@@ -63,9 +63,9 @@
   <string name="superuser_denied">Droits Super-utilisateur refusés à %s</string>
   <string name="developer_warning">Mise en garde développeur :\nandroid.permission.ACCESS_SUPERUSER\nnon déclaré dans le manifeste.</string>
   <string name="superuser_description">autorisations totales pour toutes les fonctionnalités et tous les emplacements de stockage de l\'appareil</string>
-  <string name="superuser_description_more">Super-utilisateur permet un accès total à toutes les fonctionnalités et tous les emplacements de stockage de l\'appareil, incluant ses éléments matériels sécurisés et sensibles. Cette permission est potentiellement dangereuse.</string>
+  <string name="superuser_description_more">Permet un accès total à toutes les fonctionnalités et tous les emplacements de stockage de l\'appareil, incluant ses éléments matériels sécurisés et sensibles. Cette autorisation est potentiellement dangereuse.</string>
   <string name="declared_permission">Autorisations déclarées</string>
-  <string name="declared_permission_summary">Autoriser uniquement les demandes des applications qui déclarent utiliser la permission android.permission.ACCESS_SUPERUSER</string>
+  <string name="declared_permission_summary">Accorder uniquement les demandes aux applications qui déclarent utiliser l\'autorisation android.permission.ACCESS_SUPERUSER</string>
   <string name="automatic_response">Réponse automatique</string>
   <string name="prompt">Demander</string>
   <string name="automatic_response_allow_summary">Autoriser automatiquement les nouvelles demandes</string>
@@ -80,10 +80,10 @@
   <string name="multiuser_owner_managed">Géré par le propriétaire</string>
   <string name="multiuser_user">Tous les utilisateurs</string>
   <string name="multiuser_require_owner">La politique multi-utilisateurs ne peut-être gérée que par le propriétaire de l\'appareil</string>
-  <string name="owner_login_info">Merci de basculer sur le compte du propriétaire de cet appareil afin d\'autoriser ou refuser cette demande.</string>
+  <string name="owner_login_info">Veuillez basculer sur le compte du propriétaire de cet appareil afin d\'accorder ou refuser cette demande.</string>
   <string name="all_commands">Toutes les commandes</string>
   <string name="about">À propos</string>
-  <string name="apps">Application</string>
+  <string name="apps">Applications</string>
   <string name="installing">Installation</string>
   <string name="installing_superuser">Installation de Super-utilisateur\u2026</string>
   <string name="install_superuser">Installer Super-utilisateur</string>
@@ -98,14 +98,14 @@
   <string name="access_disabled">Désactivé</string>
   <string name="apps_only">Applications uniquement</string>
   <string name="adb_only">ADB uniquement</string>
-  <string name="apps_and_adb">Application et ADB</string>
+  <string name="apps_and_adb">Applications et ADB</string>
   <string name="whats_new">Nouveautés</string>
   <string name="rate">Noter</string>
   <string name="theme">Thème</string>
   <string name="light">Clair</string>
   <string name="dark">Sombre</string>
   <string name="pin_disabled">La protection par code est désactivée</string>
-  <string name="revoke_permission">Révoquer les permissions Super-utilisateur</string>
+  <string name="revoke_permission">Révoquer les droits Super-utilisateur</string>
   <string name="details">Détails</string>
   <string name="db_delete_error">Les droits Super-utilisateur ne peuvent pas être supprimés depuis cette application.\nRedémarrez l\'application Super-utilisateur et essayez de nouveau.</string>
 </resources>
