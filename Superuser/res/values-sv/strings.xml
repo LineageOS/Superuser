@@ -48,6 +48,7 @@
   <string name="none">Inga</string>
   <string name="toast">Aviseringsbubbla</string>
   <string name="notification">Avisering</string>
+  <string name="toast_summary">toast</string>
   <string name="notification_summary">meddelande</string>
   <string name="notifications_summary">En %s visas när en app beviljas eller nekas Superuserrättigheter</string>
   <string name="no_notification">Ingen avisering kommer att visas</string>

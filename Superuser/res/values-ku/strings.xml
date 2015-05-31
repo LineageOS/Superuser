@@ -18,9 +18,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="superuser">سوپه‌ر یوزه‌ر</string>
   <string name="su_allow">ڕێگه‌دان</string>
-  <string name="su_allow_countdown">ڕێگەدان بە (%1$s)</string>
+  <string name="su_allow_countdown">ڕێگەدان بە (%١$s)</string>
   <string name="su_deny">ڕێگانەدان</string>
-  <string name="status_incoming">داواکاری سوپەریوزەر هاتووە\u2026</string>
+  <string name="status_incoming">داواکاری سوپەریوزەر هاتووە\u٢٠٢٦</string>
   <string name="unknown_uid">نه‌ناسراو UID: %s</string>
   <string name="application_request">%s  داوا دەکات بۆ چوونە ناوەوەی سوپەریوزەر.</string>
   <string name="info">ئاگاداری: ئەگەر تێناگەیت لەمە، دەبێت ڕێگە بەو داواکارییە نەدەیت.</string>
@@ -62,7 +62,7 @@
   <string name="superuser_granted">سوپه‌ریوزه‌ر ڕێگەیدا بۆ %s</string>
   <string name="superuser_denied">سوپه‌ریوزه‌ر ڕێگەینەدا بۆ %s</string>
   <string name="developer_warning">ئاگاداری گەشەپێدەر:\nandroid.permission.ACCESS_SUPERUSER\nnot declared in manifest.</string>
-  <string name="superuser_description">دەسەڵاتی تەواو بۆ هەموو تایبەتمەندییەکان و بیرگە ئامێرەکە</string>
+  <string name="superuser_description">دەسەڵاتی تەواو بۆ هەموو تایبەتمەندییەکان و یادگە ئامێرەکە</string>
   <string name="superuser_description_more">سوپه‌ریوزه‌ر ڕێگه‌ ده‌دات به‌ هه‌موو بیرگه‌ و شێوازی ئامێره‌کان، ڕه‌قه‌کاڵا ده‌گرێته‌وه‌،ئه‌م کرداره‌ مه‌ترسی داره‌</string>
   <string name="declared_permission">هه‌موو داخوازیه‌کان په‌رچدرایه‌وه‌</string>
   <string name="declared_permission_summary">تەنها ڕێگە بدە بەو داواکارییانەی کە لە بەرنامەکانی ئەندرۆیدەوە دێن،.permission.ACCESS_SUPERUSER</string>
@@ -85,7 +85,7 @@
   <string name="about">دەربارە</string>
   <string name="apps">بەرنامەکان</string>
   <string name="installing">دامەزراندن</string>
-  <string name="installing_superuser">دامەزراندنی سوپەریوزەر\u2026</string>
+  <string name="installing_superuser">دامەزراندنی سوپەریوزەر\u٢٠٢٦</string>
   <string name="install_superuser">دامەزراندنی سوپەریوزەر</string>
   <string name="install_superuser_info">سوپەریوزەر (su) ئەبێت تازە بکرێتەوە.\n\nتکایە جۆرێک هەڵبژێرە بۆ دامەزراندن.\nڕیکەڤەری پێویستە بۆ دامەزراندن لەسەر ئامێرەکانیhtc  .</string>
   <string name="recovery_install">دامەزراندنی ڕیکەڤەری</string>
