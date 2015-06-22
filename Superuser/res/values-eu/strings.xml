@@ -31,7 +31,7 @@
   <string name="command_header">Komandoa:</string>
   <string name="this_time_only">Oraingoan bakarrik</string>
   <string name="remember_for">%s minutuz gogoratu</string>
-  <string name="remember_forever">Betirako gogoratu</string>
+  <string name="remember_forever">Betiko gogoratu</string>
   <string name="interactive">Interaktiboa</string>
   <string name="logs">Erregistroak</string>
   <string name="settings">Ezarpenak</string>
@@ -42,7 +42,7 @@
   <string name="logging_summary">Gaitu Supererabiltzaile eskaera guztien erregistroa</string>
   <string name="pin_protection">PIN babesa</string>
   <string name="pin_protection_summary">Eskatu PIN bat sartzea Supererabiltzaile eskaerak onartzeko</string>
-  <string name="request_timeout">Itxarote denbora</string>
+  <string name="request_timeout">Eskaeraren denbora-muga</string>
   <string name="request_timeout_summary">%s segundo pasa ostean super-erabiltzaile eskaerak automatikoki ukatuko dira</string>
   <string name="notifications">Jakinarazpenak</string>
   <string name="none">Bat ere ez</string>

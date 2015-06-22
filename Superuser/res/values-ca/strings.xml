@@ -65,7 +65,7 @@
   <string name="superuser_description">permisos totals a totes les característiques i emmagatzematge del dispositiu</string>
   <string name="superuser_description_more">Superusuari otorga accés total a totes les característiques del dispositiu i emmagatzematge, incloent els elements segurs i sensibles del maquinari del teu dispositiu. Aquest permís és potencialment perillós.</string>
   <string name="declared_permission">Permís Declarat</string>
-  <string name="declared_permission_summary">Permet només les peticions d\'apps que declarin android.permission.ACCESS_SUPERUSER</string>
+  <string name="declared_permission_summary">Permet només les peticions d\'aplicacions que declarin android.permission.ACCESS_SUPERUSER</string>
   <string name="automatic_response">Resposta Automàtica</string>
   <string name="prompt">Pregunta</string>
   <string name="automatic_response_allow_summary">Permet automaticament totes les noves peticions</string>
@@ -96,9 +96,9 @@
   <string name="su_binary_outdated">El binari su està obsolet.</string>
   <string name="superuser_access">Accés al Superusuari</string>
   <string name="access_disabled">Desactivat</string>
-  <string name="apps_only">Només Apps</string>
+  <string name="apps_only">Només aplicacions</string>
   <string name="adb_only">Només ADB</string>
-  <string name="apps_and_adb">Apps i ADB</string>
+  <string name="apps_and_adb">Aplicacions i ADB</string>
   <string name="whats_new">Que hi ha de nou</string>
   <string name="rate">Valora</string>
   <string name="theme">Tema</string>
