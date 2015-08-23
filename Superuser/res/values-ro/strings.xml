@@ -36,7 +36,7 @@
   <string name="logs">Jurnaluri</string>
   <string name="settings">Setări</string>
   <string name="delete">Șterge</string>
-  <string name="no_logs">Nici un jurnal</string>
+  <string name="no_logs">Niciun jurnal</string>
   <string name="no_apps">În prezent nu există politici pentru aplicația Superuser.</string>
   <string name="logging">Se scrie în jurnal</string>
   <string name="logging_summary">Activați înscrierea în jurnal a tuturor cererilor Superuser</string>
@@ -51,7 +51,7 @@
   <string name="toast_summary">notificare</string>
   <string name="notification_summary">notificare</string>
   <string name="notifications_summary">O %s se va afișa când unei aplicații i se acordă sau i se refuză permisiuni de Superuser</string>
-  <string name="no_notification">Nici o notificare nu va fi afișată</string>
+  <string name="no_notification">Nicio notificare nu va fi afișată</string>
   <string name="enter_pin">Introduceți PIN</string>
   <string name="enter_new_pin">Introduceți noul PIN</string>
   <string name="incorrect_pin">PIN incorect</string>
@@ -84,7 +84,7 @@
   <string name="all_commands">Toate comenzile</string>
   <string name="about">Despre</string>
   <string name="apps">Aplicații</string>
-  <string name="installing">Instalez</string>
+  <string name="installing">Se instalează</string>
   <string name="installing_superuser">Instalez Superuser\u2026</string>
   <string name="install_superuser">Instalați Superuser</string>
   <string name="install_superuser_info">Fișierulu binar (su) Superuser trebuie actualizat.\n\nVă rugăm selectați o metodă de instalare.\nInstalarea prin Mod Recuperare este recomandată pentru dispozitivele HTC.</string>
@@ -97,13 +97,13 @@
   <string name="superuser_access">Acces Superuser</string>
   <string name="access_disabled">Dezactivat</string>
   <string name="apps_only">Numai pentru aplicații</string>
-  <string name="adb_only">Numai pentru ADB</string>
-  <string name="apps_and_adb">Pentru aplicații și ADB</string>
+  <string name="adb_only">Doar ADB</string>
+  <string name="apps_and_adb">Aplicații și ADB</string>
   <string name="whats_new">Ce este nou</string>
   <string name="rate">Evaluare</string>
   <string name="theme">Temă</string>
   <string name="light">Luminoasă</string>
-  <string name="dark">Întunecat</string>
+  <string name="dark">Întunecată</string>
   <string name="pin_disabled">Protecție PIN pentru Superuser dezactivată</string>
   <string name="revoke_permission">Revocă permisiune Superuser</string>
   <string name="details">Detalii</string>

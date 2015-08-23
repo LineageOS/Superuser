@@ -95,7 +95,7 @@
   <string name="install_success">Superuser quraşdırılması uğurlu olub.</string>
   <string name="su_binary_outdated">Su binar tarixi sәhvdir.</string>
   <string name="superuser_access">Super istifadəçi müraciəti</string>
-  <string name="access_disabled">Deaktiv</string>
+  <string name="access_disabled">Ləğv edildi</string>
   <string name="apps_only">Ancaq programlar</string>
   <string name="adb_only">Ancaq ADB</string>
   <string name="apps_and_adb">Programlar və ADB</string>
@@ -104,7 +104,7 @@
   <string name="theme">Mövzu</string>
   <string name="light">İşıq</string>
   <string name="dark">Tünd</string>
-  <string name="pin_disabled">Superuser PİN qorunması aktiv deyil</string>
+  <string name="pin_disabled">Super istifadəçi PIN qoruma ləğv edildi</string>
   <string name="revoke_permission">Superuser icazəsini geri al</string>
   <string name="details">Detallar</string>
   <string name="db_delete_error">Superuser icazəsi bu appdan ləğv edilə bilməz. \nxaiş olunur Superuser appı yenidən başladın və yenidən cəhd edin.</string>
