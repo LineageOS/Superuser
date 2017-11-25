@@ -1,3 +1,6 @@
+# Use AOSP "su" if exist
+ifeq (,$(strip $(wildcard system/extras/su/su.c)))
+
 # Root AOSP source makefile
 # su is built here, and 
 
@@ -66,4 +69,5 @@ $(SUPERUSER_MARKER): $(LOCAL_INSTALLED_MODULE)
 ALL_MODULES.$(LOCAL_MODULE).INSTALLED := \
     $(ALL_MODULES.$(LOCAL_MODULE).INSTALLED) $(SUPERUSER_RC) $(SUPERUSER_MARKER)
 
+endif
 endif
